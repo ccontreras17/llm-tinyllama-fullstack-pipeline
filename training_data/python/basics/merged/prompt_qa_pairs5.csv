@@ -1,0 +1,101 @@
+id,prompt,response
+401,Write a Python function to print all multiples of 4 from 1 to 100.,"def multiples_of_4(): print([i for i in range(1,101) if i%4==0])"
+402,Write a Python script to check if a given word is a substring of another.,"def is_substring(word, text): return word in text"
+403,Write a Python function to sum only the odd numbers in a list.,def sum_odds(lst): return sum(x for x in lst if x%2)
+404,Write a Python script to compare lengths of two strings and return the longer one.,"def longer_str(a,b): return a if len(a)>len(b) else b"
+405,Write a Python function to remove every third character from a string.,"def remove_third(s): return ''.join(c for i,c in enumerate(s) if (i+1)%3!=0)"
+406,Write a Python script to generate a list of all square numbers less than 100.,"def squares(): return [i**2 for i in range(1,10)]"
+407,Write a Python function to count the number of lowercase letters in a string.,def count_lowercase(s): return sum(1 for c in s if c.islower())
+408,Write a Python script to repeat a character 'n' times and print the result.,"def repeat_char(c,n): print(c*n)"
+409,Write a Python function to find all characters that appear more than once in a string.,def repeated_chars(s): return list({c for c in s if s.count(c) > 1})
+410,Write a Python script to convert a string to an acronym.,def to_acronym(s): return ''.join(word[0].upper() for word in s.split())
+411,Write a Python function to print numbers from 1 to n without using a loop.,def print_1_to_n(n): return n and print_1_to_n(n-1) or print(n)
+412,Write a Python script to reverse every word in a sentence while keeping their order.,def reverse_words(s): return ' '.join(w[::-1] for w in s.split())
+413,Write a Python function to get a dictionary from a list where elements are keys with their index as value.,"def list_to_dict(lst): return {v:i for i,v in enumerate(lst)}"
+414,Write a Python script to merge multiple lists into one and remove duplicates.,"def merge_unique(*lists): return list(set(sum(lists, [])))"
+415,Write a Python function to check if a sentence contains all letters of the alphabet.,def is_pangram(s): import string; return set(string.ascii_lowercase) <= set(s.lower())
+416,Write a Python script to capitalize letters at even positions in a string.,"def cap_even_pos(s): return ''.join(c.upper() if i%2==0 else c for i,c in enumerate(s))"
+417,Write a Python function to remove all symbols except letters and numbers from a string.,"import re; def clean_string(s): return re.sub(r'[^a-zA-Z0-9]', '', s)"
+418,Write a Python script to check if a string ends with a specific suffix.,"def ends_with(s,suffix): return s.endswith(suffix)"
+419,Write a Python function to convert a list of tuples into a dictionary.,def tuples_to_dict(t): return dict(t)
+420,Write a Python script to get the Unicode code point of a character.,def unicode_val(c): return ord(c)
+421,Write a Python function to print the binary equivalent of a number using recursion.,"def print_binary(n): if n>0: print_binary(n//2); print(n%2,end='')"
+422,Write a Python script to determine if a string contains any repeated characters.,def has_repeats(s): return len(set(s)) != len(s)
+423,Write a Python function to get the maximum of a list without using max().,def max_in_list(lst): m=lst[0]; [m:=x if x>m else m for x in lst]; return m
+424,Write a Python script to check if a number is a multiple of both 2 and 6.,def multiple_2_6(n): return n%2==0 and n%6==0
+425,Write a Python function to extract only letters from a string with mixed characters.,def only_letters(s): return ''.join(c for c in s if c.isalpha())
+426,Write a Python script to count how many words in a sentence start with a capital letter.,def count_caps(s): return sum(1 for w in s.split() if w[0].isupper())
+427,Write a Python function to alternate case for each character in a string.,"def alt_case(s): return ''.join(c.upper() if i%2==0 else c.lower() for i,c in enumerate(s))"
+428,Write a Python script to print the first n numbers of the harmonic series.,"def harmonic(n): [print(1/i) for i in range(1,n+1)]"
+429,Write a Python function to convert each character in a string to its hexadecimal value.,def to_hex(s): return [hex(ord(c)) for c in s]
+430,Write a Python script to generate a random uppercase letter.,"import random,string; print(random.choice(string.ascii_uppercase))"
+431,Write a Python function to check if a number is within a specific range (inclusive).,"def in_range(n, start, end): return start <= n <= end"
+432,Write a Python script to replace the middle character of a string with '*'.,def mask_middle(s): mid=len(s)//2; return s[:mid]+'*'+s[mid+1:]
+433,Write a Python function to find the sum of all prime numbers up to a given number.,"def sum_primes(n): return sum(x for x in range(2,n+1) if all(x%i for i in range(2,int(x**0.5)+1)))"
+434,Write a Python script to check whether a list is strictly increasing.,def strictly_increasing(lst): return all(lst[i] < lst[i+1] for i in range(len(lst)-1))
+435,Write a Python function to return the average of numbers in a list rounded to the nearest integer.,def avg_rounded(lst): return round(sum(lst)/len(lst))
+436,"Write a Python script to check whether a character is a letter, digit, or symbol.",def char_type(c): return 'Letter' if c.isalpha() else 'Digit' if c.isdigit() else 'Symbol'
+437,Write a Python function to print the reverse of a number without converting it to a string.,def reverse_num(n): r=0; while n: r=r*10+n%10; n//=10; print(r)
+438,Write a Python script to print the index of all vowels in a string.,"def vowel_indexes(s): return [i for i,c in enumerate(s) if c.lower() in 'aeiou']"
+439,Write a Python function to determine if a year is a century year.,def is_century(year): return year % 100 == 0
+440,Write a Python script to convert a number to exponential notation.,def to_exponential(n): return '{:.2e}'.format(n)
+441,Write a Python function to rotate a list to the left by n positions.,"def rotate_left(lst,n): return lst[n:] + lst[:n]"
+442,Write a Python script to count how many uppercase vowels appear in a string.,def count_upper_vowels(s): return sum(1 for c in s if c in 'AEIOU')
+443,Write a Python function to check if a number is a Harshad number.,def is_harshad(n): return n % sum(int(d) for d in str(n)) == 0
+444,Write a Python script to get the square root of each element in a list using a loop.,def sqrt_loop(lst): return [x**0.5 for x in lst]
+445,Write a Python function to return the character with the highest frequency in a string.,from collections import Counter; def max_freq_char(s): return Counter(s).most_common(1)[0][0]
+446,Write a Python script to split a list into chunks of size n.,"def chunk_list(lst,n): return [lst[i:i+n] for i in range(0,len(lst),n)]"
+447,Write a Python function to remove leading zeros from a number represented as a string.,def strip_leading_zeros(s): return s.lstrip('0')
+448,Write a Python script to check if the characters in a string form a palindrome sequence.,def is_palindrome(s): return s == s[::-1]
+449,Write a Python function to return a new string without the characters at odd indices.,def skip_odds(s): return ''.join(s[i] for i in range(len(s)) if i%2==0)
+450,Write a Python script to calculate the GCD of multiple numbers using reduce().,"from functools import reduce; from math import gcd; def gcd_multi(lst): return reduce(gcd, lst)"
+451,Write a Python function to find the difference between the ASCII values of two characters.,"def ascii_diff(a,b): return abs(ord(a)-ord(b))"
+452,Write a Python script to generate a pattern of '*' based on user input height.,"def pattern(n): [print('*'*i) for i in range(1,n+1)]"
+453,Write a Python function to check if a list contains consecutive numbers.,"def has_consecutive(lst): return sorted(lst) == list(range(min(lst), max(lst)+1))"
+454,Write a Python script to remove special characters from all strings in a list.,"import re; def clean_list(lst): return [re.sub(r'[^a-zA-Z0-9 ]','',s) for s in lst]"
+455,Write a Python function to find the product of digits in a number using recursion.,def prod_digits(n): return 1 if n<10 else n%10 * prod_digits(n//10)
+456,Write a Python script to count even and odd digits in a number.,"def count_even_odd(n): e=o=0; [e:=e+1 if int(d)%2==0 else o:=o+1 for d in str(n)]; return e,o"
+457,Write a Python function to replace repeated characters with a single occurrence.,def remove_repeats(s): return ''.join(dict.fromkeys(s))
+458,Write a Python script to create a frequency map of characters from a sentence.,from collections import Counter; def freq_map(s): return Counter(s)
+459,Write a Python function to return the longest substring with unique characters.,"def longest_unique_substr(s): seen = {}; start = max_len = 0; for i,c in enumerate(s): start = max(start, seen.get(c,-1)+1); seen[c]=i; max_len = max(max_len, i-start+1); return max_len"
+460,Write a Python script to extract all capitalized words from a string.,def capitalized_words(s): return [w for w in s.split() if w.istitle()]
+461,Write a Python function to multiply elements in a list by their index.,"def multiply_by_index(lst): return [i*x for i,x in enumerate(lst)]"
+462,Write a Python script to return only the last digits from each number in a list.,def last_digits(lst): return [int(str(x)[-1]) for x in lst]
+463,Write a Python function to sum the digits in a string containing both letters and numbers.,def sum_digits_in_str(s): return sum(int(c) for c in s if c.isdigit())
+464,Write a Python script to count the number of unique letters in a string.,def unique_letter_count(s): return len(set(c for c in s if c.isalpha()))
+465,Write a Python function to check whether all digits in a number are odd.,def all_odd_digits(n): return all(int(d)%2 for d in str(n))
+466,Write a Python script to replace each word in a string with its length.,def word_lengths(s): return ' '.join(str(len(w)) for w in s.split())
+467,Write a Python function to double the values in a list without using list comprehension.,def double_values(lst): out=[]; [out.append(x*2) for x in lst]; return out
+468,Write a Python script to find the longest word in a list of strings.,"def longest_word(lst): return max(lst, key=len)"
+469,Write a Python function to determine if a string contains only one unique character.,def one_unique_char(s): return len(set(s))==1
+470,Write a Python script to count the total occurrences of each character using Counter.,from collections import Counter; def count_all(s): return Counter(s)
+471,Write a Python function to remove all items greater than a specific value from a list.,"def remove_gt(lst,val): return [x for x in lst if x <= val]"
+472,Write a Python script to convert a camelCase string to snake_case.,"import re; def camel_to_snake(s): return re.sub(r'([A-Z])', r'_\1', s).lower()"
+473,Write a Python function to count total characters excluding spaces and punctuation.,import string; def count_chars(s): return sum(1 for c in s if c not in string.punctuation+' ')
+474,Write a Python script to validate if all characters in a string are alphanumeric.,def is_alnum(s): return s.isalnum()
+475,Write a Python function to compute the digital root of a number.,"def digital_root(n): return n if n<10 else digital_root(sum(map(int,str(n))))"
+476,Write a Python script to rotate characters in a string by n positions.,"def rotate_string(s,n): return s[n:] + s[:n]"
+477,Write a Python function to find the sum of the first n natural numbers using formula.,def sum_formula(n): return n*(n+1)//2
+478,Write a Python script to simulate a coin toss and print heads or tails.,"import random; print(random.choice(['Heads','Tails']))"
+479,Write a Python function to count how many digits are in a given string.,def count_digits(s): return sum(1 for c in s if c.isdigit())
+480,"Write a Python script to convert a number to its binary, octal, and hexadecimal equivalents.","def convert_all(n): return bin(n), oct(n), hex(n)"
+481,Write a Python function to determine if two strings have the same characters in any order.,"def same_chars(a,b): return sorted(a)==sorted(b)"
+482,Write a Python script to get the last n characters of a string.,"def last_n(s,n): return s[-n:]"
+483,Write a Python function to reverse the digits of a number using math only.,def reverse_math(n): rev=0; while n: rev=rev*10 + n%10; n//=10; return rev
+484,Write a Python script to format a string using user-provided values.,def format_str(): name=input(); age=int(input()); print(f'My name is {name} and I am {age}')
+485,Write a Python function to return a new list with squares of even numbers only.,def squares_of_evens(lst): return [x**2 for x in lst if x%2==0]
+486,Write a Python script to extract the domain name from an email address.,def extract_domain(email): return email.split('@')[-1]
+487,Write a Python function to remove duplicates from a string while preserving order.,def dedupe_str(s): seen=set(); out=''; [out:=out+c if c not in seen else None or seen.add(c) for c in s]; return out
+488,Write a Python script to create a countdown from a given number with a delay.,"import time; def countdown(n): [print(i) or time.sleep(1) for i in range(n,0,-1)]"
+489,Write a Python function to get the smallest positive number in a list.,def min_positive(lst): pos=[x for x in lst if x>0]; return min(pos) if pos else None
+490,Write a Python script to print each word of a sentence on a new line.,def newline_words(s): [print(w) for w in s.split()]
+491,Write a Python function to find all factors of a number using a list comprehension.,"def factors(n): return [i for i in range(1,n+1) if n%i==0]"
+492,Write a Python script to check if a string is numeric using isnumeric().,def check_numeric(s): return s.isnumeric()
+493,Write a Python function to extract the initials from a full name.,def initials(name): return ''.join(w[0].upper() for w in name.split())
+494,Write a Python script to create a list of all letters in a word using a for loop.,def letters_list(w): out=[]; [out.append(c) for c in w]; return out
+495,Write a Python function to test if a given list has at least two identical elements.,def has_duplicates(lst): return len(lst) != len(set(lst))
+496,Write a Python script to create a new list from every third element of an input list.,def every_third(lst): return lst[2::3]
+497,Write a Python function to count the number of distinct characters in a string.,def count_distinct(s): return len(set(s))
+498,Write a Python script to alternate between upper and lower case in a string.,"def alt_upper_lower(s): return ''.join(c.upper() if i%2==0 else c.lower() for i,c in enumerate(s))"
+499,Write a Python function to multiply the last digit of one number with the first digit of another.,"def mult_digits(a,b): return int(str(a)[-1]) * int(str(b)[0])"
+500,Write a Python script to replace all letters in a string with their Unicode code.,def letters_to_unicode(s): return ' '.join(str(ord(c)) for c in s)

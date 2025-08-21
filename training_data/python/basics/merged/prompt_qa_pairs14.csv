@@ -1,0 +1,101 @@
+id,prompt,response
+1301,Explain the difference between using `input()` and hardcoded values in Python.,`input()` gets user input at runtime; hardcoded values are fixed in the code.
+1302,Explain how to use the `max()` function with a custom key.,"Use `max(iterable, key=lambda x: ...)` to customize the comparison logic."
+1303,Explain how to check if all characters in a string are alphabetic using `isalpha()`.,Use `string.isalpha()` — returns True if all characters are alphabetic.
+1304,Explain how Python handles integer division versus float division.,"`/` always returns a float, `//` returns an integer by truncating the decimal."
+1305,Explain how to test whether a character is a vowel or consonant.,Check if char in `'aeiouAEIOU'` → vowel; else consonant if it’s a letter.
+1306,Explain how to reverse a number using math operations.,Use a loop to extract digits and rebuild the number in reverse.
+1307,Explain what the `abs()` function does in Python.,Returns the absolute (non-negative) value of a number.
+1308,Explain how to find the largest digit in an integer.,"Convert to string, use `max()` to get the largest digit."
+1309,Explain how to calculate the sum of digits of a number using a loop.,Use a while loop to extract digits with `% 10` and add them.
+1310,Explain what happens if you slice a string beyond its length.,Python just returns as much as it can — no error if end is out of bounds.
+1311,Explain how to test if a string is a valid number before converting it.,Use `string.isdigit()` or try `int()` inside a try-except block.
+1312,Explain how to create a multiplication table using nested loops.,"Nested loops: outer for rows, inner for columns. Multiply indices."
+1313,Explain how to convert a number to binary without using `bin()`.,"Divide by 2 repeatedly, store remainders, and reverse them."
+1314,Explain how to test whether a number is a perfect square.,Check if `sqrt(n).is_integer()` or if `i*i == n` in a loop.
+1315,Explain how to find the common characters between two strings.,Use `set(s1) & set(s2)` to get shared characters.
+1316,Explain how to count how many words in a sentence start with a specific letter.,"Split sentence, loop through words, check `word.startswith(letter)`."
+1317,Explain how to center text using string formatting in Python.,Use `'{:^width}'.format(text)` or `f'{text:^width}'`.
+1318,Explain how to create a pattern using nested loops and `print()`.,"Two nested loops: outer for rows, inner for symbols — print shapes."
+1319,Explain how to check if two strings are anagrams.,Sort and compare character counts using `collections.Counter()`.
+1320,Explain how to find the factorial of a number using a `for` loop.,Use a loop: multiply all integers from 1 to n.
+1321,Explain how to find the LCM of two numbers using a loop.,"Start from max(a, b); check multiples until divisible by both."
+1322,Explain how to convert hours and minutes into total seconds in Python.,"Multiply hours by 3600 and minutes by 60, then add."
+1323,Explain how to test whether a string contains only whitespace characters.,Use `string.isspace()` — returns True if only whitespace.
+1324,Explain the difference between `isupper()` and `islower()`.,"`isupper()` checks for all uppercase, `islower()` checks for all lowercase."
+1325,Explain how to extract only numbers from a mixed string using a loop.,Loop and use `char.isdigit()` to collect digits.
+1326,Explain how to manually count occurrences of a character in a string.,Loop and increment a counter when the target char is found.
+1327,Explain how to build a new string by removing specific characters.,Build a new string skipping the unwanted characters.
+1328,Explain how to detect a repeated pattern in a string.,Check if string can be built by repeating a substring.
+1329,Explain how to capitalize the first letter of each word without using `title()`.,Capitalize first letter manually: `word[0].upper() + word[1:]`.
+1330,Explain how to determine the second largest number in a list.,"Remove max, then find max again — that’s the second largest."
+1331,Explain how to remove all `None` values from a list.,Use list comprehension: `[x for x in lst if x is not None]`.
+1332,Explain how to use `sorted()` with a lambda to sort by the last letter.,"Use `sorted(words, key=lambda w: w[-1])` to sort by last letter."
+1333,Explain how to get the middle character of a string.,Return `s[len(s)//2]` — use slicing if even-length.
+1334,Explain how to use slicing to reverse a list.,Use slicing: `lst[::-1]`.
+1335,Explain how to find the number of digits in an integer without converting it to a string.,Use a loop and divide by 10 until the number becomes 0.
+1336,Explain the difference between `list()` and using square brackets to create a list.,`list()` converts from iterable; `[]` is for defining manually.
+1337,Explain how to zip three lists into a list of tuples.,"Use `zip(list1, list2, list3)` — creates tuples with 3 items."
+1338,Explain what happens if you modify a list while iterating over it.,Can lead to skipped items or unexpected behavior — use copy or loop over slice.
+1339,Explain how to sort a list of strings by length.,"Use `sorted(words, key=len)`."
+1340,Explain how to check whether a list is sorted.,Use `lst == sorted(lst)` or compare each element with the next.
+1341,Explain how to replace all instances of a value in a list with another value.,Loop and replace target with new value using indexing or comprehension.
+1342,Explain how to flatten a list of tuples into a single list.,"Use a loop or `sum(list_of_tuples, [])` to flatten."
+1343,Explain how to count how many strings in a list contain only vowels.,Check each string: all letters in `'aeiouAEIOU'` and not empty.
+1344,Explain how to create a list of even numbers using list comprehension.,Use `[x for x in range(n) if x % 2 == 0]`.
+1345,Explain how to remove all falsy values from a list.,"Use `[x for x in lst if x]` — removes False, 0, '', None, etc."
+1346,Explain how to use a list of keys to build a dictionary with default values.,Use `{k: default for k in keys}` with a list of keys.
+1347,Explain how to generate a random number using the `random` module.,"Use `random.randint(a, b)` or `random.random()` for floats."
+1348,Explain how to shuffle the elements of a list.,Use `random.shuffle(my_list)` to shuffle in place.
+1349,Explain how to seed the random number generator in Python.,Use `random.seed(value)` to make results reproducible.
+1350,Explain how to create a delay in your program using the `time` module.,Use `time.sleep(seconds)` to pause the program.
+1351,Explain how to measure the execution time of a block of code.,"Use `time.time()` before and after the block, subtract to get duration."
+1352,Explain how to format a float with commas as thousand separators.,"Use `f'{number:,.2f}'` to format with commas."
+1353,Explain how to create a right-aligned column of numbers using string formatting.,Use `f'{num:>width}'` to align right with a specific width.
+1354,Explain how to convert a list of strings to integers using a loop.,Loop through list and use `int(x)` for each string.
+1355,Explain how to extract the domain name from an email address using slicing.,Use slicing: `email[email.index('@')+1:]`.
+1356,Explain how to test whether two lists have the same elements regardless of order.,Use `set(list1) == set(list2)` if duplicates don't matter.
+1357,Explain how to remove punctuation from all strings in a list.,Loop and use `str.translate()` or regex to strip punctuation.
+1358,Explain how to group words by their first letter using a dictionary.,"Use a dictionary with first letter as key, append words to list values."
+1359,Explain how to sort a list of dictionaries by a specific key.,"Use `sorted(dicts, key=lambda x: x['key'])`."
+1360,Explain how to use `setdefault()` to group values in a dictionary.,"Use `d.setdefault(key, []).append(value)` to group by key."
+1361,Explain how to reverse the keys and values in a dictionary.,"Use `{v: k for k, v in dict.items()}` — may lose values if duplicates."
+1362,Explain how to merge two dictionaries using dictionary unpacking.,"Use `{**dict1, **dict2}` in Python 3.5+."
+1363,Explain how to remove a key from a dictionary only if it exists.,"Use `dict.pop(key, None)`."
+1364,Explain how to initialize a dictionary with default values using `fromkeys()`.,"Use `dict.fromkeys(keys, default_value)`."
+1365,Explain how to count characters in a string using a dictionary.,Loop and use a dictionary to increment character counts.
+1366,Explain how to create a dictionary from a list of key-value tuples.,Use `dict(list_of_tuples)`.
+1367,Explain how to sort dictionary items by key or value.,"Use `sorted(dict.items())` for keys, `sorted(dict.items(), key=lambda x: x[1])` for values."
+1368,Explain how to remove all whitespace characters from a string.,Use `''.join(s.split())` or regex to remove all whitespace.
+1369,Explain how to count the number of words in a string.,Use `len(s.split())`.
+1370,Explain how to split a string into a list of sentences.,"Use `s.split('.')` or `re.split(r'[.!?]', s)`."
+1371,Explain how to convert a sentence into a list of ASCII values.,Use `[ord(c) for c in sentence]`.
+1372,Explain how to return the most frequent word in a sentence.,"Split, count with `collections.Counter`, return `most_common(1)`."
+1373,Explain how to find all capital letters in a string using a loop.,Loop and check `char.isupper()`.
+1374,Explain how to compare two strings and return their common prefix.,"Loop and compare chars until mismatch, return matched prefix."
+1375,Explain how to alternate case in a string starting with uppercase.,Toggle case every other character using index modulo 2.
+1376,Explain how to swap the case of each character in a string.,Use `s.swapcase()`.
+1377,Explain how to test whether a string has balanced parentheses.,"Use a counter: `+1` for `(`, `-1` for `)` — must end at zero."
+1378,Explain how to convert a list of words into a hyphen-separated string.,Use `'-'.join(words)`.
+1379,Explain how to detect duplicate words in a sentence.,"Split, then check if `len(set(words)) != len(words)`."
+1380,Explain how to find the longest palindromic substring in a string.,Expand around each center to find longest matching palindrome.
+1381,Explain how to convert a comma-separated string to a list of integers.,"Split by `','`, then convert each to `int`."
+1382,Explain how to check if all items in a list are strings.,"Use `all(isinstance(x, str) for x in lst)`."
+1383,Explain how to capitalize only the last letter of each word.,Use `word[:-1] + word[-1].upper()` in a loop.
+1384,Explain how to filter a list of strings by a specific prefix.,Use `[w for w in words if w.startswith(prefix)]`.
+1385,Explain how to create a matrix using a list of lists.,Use `[ [0]*cols for _ in range(rows) ]` or custom data.
+1386,Explain how to print a matrix row by row using nested loops.,"Loop outer for rows, inner for columns — print row by row."
+1387,Explain how to transpose a matrix manually using loops.,Loop and reassign: `transposed[j][i] = matrix[i][j]`.
+1388,Explain how to reverse each row in a 2D list.,Loop through each row and use `row.reverse()` or `[::-1]`.
+1389,Explain how to sum the diagonal of a square matrix.,Sum values where `i == j` in nested loops.
+1390,Explain how to flatten a 2D list using list comprehension.,Use `[item for row in matrix for item in row]`.
+1391,Explain how to generate a checkerboard pattern using loops.,Use nested loops: alternate `0` and `1` based on `(i + j) % 2`.
+1392,Explain how to create a list of digits from a number using math.,"Extract digits with `% 10` and `// 10`, append to list."
+1393,Explain how to find the sum of even digits in a number.,"Use loop and check `digit % 2 == 0`, then sum."
+1394,Explain how to detect repeated digits in an integer.,Use set to track digits; return True if a digit repeats.
+1395,Explain how to find the maximum digit in a number without converting to string.,"Track max digit using math: `max = 0; while n: max = max(n%10, max); n //= 10`."
+1396,Explain how to check if a number is an Armstrong number.,"Sum each digit raised to the power of total digits, compare with original."
+1397,Explain how to convert a binary string to an integer manually.,"Loop from end, multiply digit by powers of 2, sum."
+1398,Explain how to create a function that checks for prime numbers.,"Check divisibility from 2 to sqrt(n), return False if any divides."
+1399,Explain how to generate the first `n` prime numbers.,"Loop until you find `n` primes, use is-prime check for each."
+1400,Explain how to count how many prime digits are in a number.,"Extract digits, count how many are 2, 3, 5, or 7."

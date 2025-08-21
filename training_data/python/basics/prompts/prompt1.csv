@@ -1,0 +1,102 @@
+id,prompt
+1,Write a Python function to check if a string is a palindrome.
+2,Write a Python function to calculate the factorial of a number using recursion.
+3,Write a Python function to compute the Fibonacci sequence up to n terms.
+4,Write a Python program to remove duplicates from a list.
+5,Write a Python script to count the frequency of each character in a string.
+6,Write a Python function to check if a number is prime.
+7,Write a Python program to find the greatest common divisor (GCD) of two numbers.
+8,Write a Python function to reverse the words in a sentence.
+9,Write a Python script to merge two dictionaries.
+10,Write a Python function to calculate the sum of all even numbers in a list.
+11,Write a Python program to find the second largest number in a list.
+12,Write a Python function to flatten a nested list.
+13,Write a Python script to check if a substring exists within a string.
+14,Write a Python program to sort a list of tuples by the second element.
+15,Write a Python function to check if a year is a leap year.
+16,Write a Python script to get the file size of a given file.
+17,Write a Python function to remove punctuation from a string.
+18,Write a Python program to read a file line by line and print each line.
+19,Write a Python function to convert a list of strings to a single string separated by commas.
+20,Write a Python program to generate a random password of length 10.
+21,Write a Python function to find all the unique elements in a list.
+22,Write a Python script to find the most frequent element in a list.
+23,Write a Python function to compute the average of numbers in a list.
+24,Write a Python program to check if two strings are anagrams.
+25,Write a Python function to count the number of vowels in a string.
+26,Write a Python script to get the current date and time.
+27,Write a Python function to calculate the area of a triangle given its base and height.
+28,Write a Python program to check if a list is sorted in ascending order.
+29,Write a Python function to calculate the square root of a number.
+30,Write a Python script to list all files in a directory.
+31,Write a Python function to find the longest word in a sentence.
+32,Write a Python program to check if a number is an Armstrong number.
+33,Write a Python function to capitalize the first letter of each word in a string.
+34,Write a Python program to create a list of squares from 1 to 10.
+35,Write a Python function to calculate the sum of digits of a number.
+36,Write a Python script to replace all spaces in a string with underscores.
+37,Write a Python program to convert a binary number to decimal.
+38,Write a Python function to check if all elements in a list are unique.
+39,Write a Python script to remove all whitespace characters from a string.
+40,Write a Python program to create a dictionary from two lists.
+41,Write a Python function to return the maximum of three numbers.
+42,Write a Python script to print the multiplication table of a given number.
+43,Write a Python function to find the common elements between two lists.
+44,Write a Python program to convert Celsius to Kelvin.
+45,Write a Python script to calculate the factorial using the math module.
+46,Write a Python function to calculate the compound interest.
+47,Write a Python program to count the number of lines in a text file.
+48,Write a Python script to reverse the order of words in a file.
+49,Write a Python function to find the index of an element in a list.
+50,Write a Python program to remove all occurrences of a specific element from a list.
+51,Write a Python function to merge two sorted lists into a single sorted list.
+52,Write a Python script to create a text file and write some text to it.
+53,Write a Python function to check if a list contains only numbers.
+54,Write a Python program to find the sum of all numbers divisible by 3 in a list.
+55,Write a Python function to generate the first n prime numbers.
+56,Write a Python script to rename all files in a directory by adding a prefix.
+57,Write a Python program to find the median of a list.
+58,Write a Python function to check if a string is a pangram.
+59,Write a Python script to calculate the power of a number.
+60,Write a Python program to convert a decimal number to binary.
+61,Write a Python function to remove None values from a list.
+62,Write a Python script to count how many times a word appears in a file.
+63,Write a Python program to check if a string starts with a given prefix.
+64,Write a Python function to get the factorial of a number using reduce.
+65,Write a Python script to sort a list in descending order.
+66,Write a Python function to generate a list of random integers.
+67,Write a Python program to check if a number is even or odd.
+68,Write a Python script to remove duplicates while preserving order.
+69,Write a Python function to return the nth Fibonacci number.
+70,Write a Python program to convert a string to title case.
+71,Write a Python function to check if a string contains only digits.
+72,Write a Python script to create a list of all even numbers between 1 and 100.
+73,Write a Python program to calculate the perimeter of a rectangle.
+74,Write a Python function to split a string into a list of words.
+75,Write a Python script to create a nested dictionary.
+76,Write a Python program to multiply all numbers in a list.
+77,Write a Python function to validate an email address.
+78,Write a Python script to count the number of uppercase letters in a string.
+79,Write a Python program to remove all vowels from a string.
+80,Write a Python function to calculate the distance between two points.
+81,Write a Python script to check if a given key exists in a dictionary.
+82,Write a Python program to merge multiple dictionaries.
+83,Write a Python function to check if a string is a palindrome ignoring spaces.
+84,Write a Python script to find all pairs in a list whose sum is equal to a target value.
+85,Write a Python function to count the occurrence of each word in a string.
+86,Write a Python program to extract digits from a string.
+87,Write a Python function to generate all permutations of a string.
+88,Write a Python script to sort a dictionary by its values.
+89,Write a Python program to replace vowels in a string with '*'.
+90,Write a Python function to check if two lists have at least one common element.
+91,Write a Python script to print all prime numbers between 1 and 50.
+92,Write a Python program to convert a list of characters into a string.
+93,Write a Python function to remove all non-alphanumeric characters from a string.
+94,Write a Python script to check if a string is a valid identifier.
+95,Write a Python program to count the number of words in a sentence.
+96,Write a Python function to convert a list of integers to a comma-separated string.
+97,Write a Python script to swap the first and last elements of a list.
+98,Write a Python program to check if a number is a perfect square.
+99,Write a Python function to round a number to two decimal places.
+100,Write a Python script to remove all empty strings from a list.
+

@@ -1,0 +1,101 @@
+id,prompt
+301,Write a Python function to return the first n multiples of a number.
+302,Write a Python script to convert a binary string to an integer.
+303,Write a Python function to replace all digits in a string with '#' symbol.
+304,Write a Python script to merge three lists into one.
+305,Write a Python function to find all even digits in a given number.
+306,Write a Python script to convert a number to a binary string.
+307,Write a Python function to remove all zeros from a list of numbers.
+308,Write a Python script to format a floating number with 2 decimal places.
+309,Write a Python function to insert a space between characters in a string.
+310,Write a Python script to generate a list of powers of 2 from 1 to 10.
+311,Write a Python function to count how many times a letter appears in a word.
+312,Write a Python script to find all elements greater than a given number in a list.
+313,Write a Python function to join a list of words into a sentence with spaces.
+314,Write a Python script to convert all integers in a list to their absolute values.
+315,Write a Python function to check if two strings are rotations of each other.
+316,Write a Python script to print all odd numbers between two numbers entered by the user.
+317,Write a Python function to convert an integer to a list of its digits in reverse order.
+318,Write a Python script to generate all three-digit numbers using digits 1 to 3.
+319,Write a Python function to check if the sum of a list is divisible by 10.
+320,Write a Python script to sort a list of integers without using sort() or sorted().
+321,Write a Python function to repeat every character in a string three times.
+322,Write a Python script to check if a list has duplicate elements next to each other.
+323,Write a Python function to print a vertical list of characters from a string.
+324,Write a Python script to compute the length of each word in a list of words.
+325,Write a Python function to return True if a string has at least one uppercase letter.
+326,Write a Python script to reverse the keys and values in a dictionary of strings.
+327,Write a Python function to find the second smallest number in a list.
+328,Write a Python script to print numbers from 100 to 1 in reverse using recursion.
+329,Write a Python function to count how many items in a list are greater than 100.
+330,Write a Python script to shift all elements in a list one position to the right.
+331,Write a Python function to return the difference between two sets.
+332,Write a Python script to print characters from a string that occur only once.
+333,Write a Python function to calculate the area of a circle given its radius.
+334,Write a Python script to rotate characters in a string by one position to the left.
+335,Write a Python function to find the common characters between two strings.
+336,Write a Python script to convert a nested list into a flat list.
+337,Write a Python function to count how many times each word appears in a list.
+338,Write a Python script to convert a list of integers into a single integer.
+339,Write a Python function to insert a given string into the middle of another string.
+340,Write a Python script to print a countdown timer from 10 to 1 with delay.
+341,Write a Python function to check if a string ends with a vowel.
+342,Write a Python script to remove leading and trailing whitespace from a string.
+343,Write a Python function to remove duplicate items from a tuple.
+344,Write a Python script to find all indexes of a specific element in a list.
+345,Write a Python function to add a key-value pair to a dictionary.
+346,Write a Python script to find all words in a string that start with a vowel.
+347,Write a Python function to remove the middle element from a list.
+348,Write a Python script to display the characters in a string in reverse order with spacing.
+349,Write a Python function to return the smallest even number in a list.
+350,Write a Python script to check if all numbers in a list are even.
+351,Write a Python function to get the index of the maximum value in a list.
+352,Write a Python script to delete all odd-indexed items from a list.
+353,Write a Python function to create a string made of the first and last characters of a string.
+354,Write a Python script to filter out all negative numbers in a tuple.
+355,Write a Python function to replace spaces with dashes in a string.
+356,Write a Python script to print a square matrix using nested lists.
+357,Write a Python function to convert a string of numbers into a list of integers.
+358,Write a Python script to multiply two numbers without using the '*' operator.
+359,Write a Python function to count the number of lowercase vowels in a string.
+360,Write a Python script to print all the factors of a given number.
+361,Write a Python function to return the first non-repeating character in a string.
+362,Write a Python script to split a sentence into a list of words and reverse each word.
+363,Write a Python function to find the second last element in a list.
+364,Write a Python script to insert a value in a list at every second position.
+365,Write a Python function to calculate how many words are in a given string.
+366,Write a Python script to find the maximum difference between elements in a list.
+367,Write a Python function to capitalize every alternate letter in a string.
+368,Write a Python script to count the number of non-space characters in a string.
+369,Write a Python function to convert a list of numbers into their square roots.
+370,Write a Python script to find all palindromic substrings in a string.
+371,Write a Python function to return a new list containing elements at even indexes.
+372,Write a Python script to convert a tuple of strings into a comma-separated string.
+373,Write a Python function to return the character that appears most frequently in a string.
+374,Write a Python script to replace all lowercase vowels with their uppercase counterparts.
+375,Write a Python function to insert dashes between consecutive odd numbers in a number.
+376,Write a Python script to round all float numbers in a list to the nearest whole number.
+377,Write a Python function to check if a list is symmetric.
+378,Write a Python script to print the sum of digits of all numbers in a list.
+379,Write a Python function to remove all strings from a mixed-type list.
+380,Write a Python script to count how many strings in a list start and end with the same letter.
+381,"Write a Python function to return a string repeated n times, each on a new line."
+382,Write a Python script to capitalize the first and last letter of each word in a string.
+383,Write a Python function to count the total number of punctuation characters in a string.
+384,Write a Python script to convert a nested tuple into a flat tuple.
+385,Write a Python function to count the number of words that are palindromes in a sentence.
+386,Write a Python script to multiply all digits in a string.
+387,Write a Python function to truncate a string to the first 10 characters.
+388,Write a Python script to find all numbers below 1000 that are divisible by both 3 and 5.
+389,Write a Python function to mask vowels in a string with an underscore.
+390,"Write a Python script to count total spaces, digits, and uppercase characters in a string."
+391,Write a Python function to add two numbers without using the '+' operator.
+392,Write a Python script to check if two lists are of the same length and have the same elements.
+393,Write a Python function to replace each character in a string with its next ASCII character.
+394,Write a Python script to extract numbers from a string and add them together.
+395,Write a Python function to test whether all characters in a string are alphabetic.
+396,Write a Python script to filter a dictionary to only keys with values above a threshold.
+397,Write a Python function to determine the longest run of a single character in a string.
+398,Write a Python script to display each item in a list with its position number.
+399,"Write a Python function to convert seconds into days, hours, minutes, and seconds."
+400,"Write Python code to print Hello World."

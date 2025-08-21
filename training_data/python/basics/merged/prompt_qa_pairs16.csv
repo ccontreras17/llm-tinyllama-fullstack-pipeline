@@ -1,0 +1,101 @@
+id,prompt,response
+1501,Explain how to create a string made of every third character from a list of strings.,"Loop through each string in the list, extract every third character using slicing (`s[2::3]`), and concatenate them to form the final string."
+1502,Explain how to check if a number has alternating even and odd digits.,"Convert the number to a string, then iterate over each digit. Check that adjacent digits alternate between even and odd using `int(d) % 2`."
+1503,Explain how to print a square made of asterisks with a hollow center.,"Use nested loops to print a square. Print `*` on borders, and space in the center using `if i == 0 or i == n-1 or j == 0 or j == n-1`."
+1504,Explain how to detect if a string contains any repeated character more than twice.,Use `collections.Counter` to count characters and check if any character has a count greater than 2.
+1505,Explain how to rotate the characters in a string to the right by 1 position.,"Convert string to list, take the last character, and concatenate it with the rest using slicing: `s[-1] + s[:-1]`."
+1506,Explain how to count the number of lowercase vowels in a list of words.,"Loop through the list of words, count lowercase vowels using a condition like `c in 'aeiou'`."
+1507,Explain how to compute the digital root of a number.,"Sum the digits repeatedly until a single digit remains. You can use `while n >= 10: n = sum(map(int, str(n)))`."
+1508,Explain how to test if a number is a palindrome using string conversion.,Convert the number to a string and compare it to its reverse: `str(n) == str(n)[::-1]`.
+1509,Explain how to extract a substring between two delimiters in a string.,Use string methods or slicing with `find()` or `index()` to get the substring between two delimiters.
+1510,"Explain how to replace all spaces in a string with dashes, except the first one.","Split the string using `split(' ', 1)` and replace spaces in the second part using `.replace(' ', '-')`."
+1511,Explain how to reverse the order of words in a sentence using slicing.,"Split the sentence with `split()`, reverse the list with slicing `[::-1]`, and join it back with `' '.join()`."
+1512,Explain how to repeat each character in a string three times.,Use a list comprehension or generator: `''.join(c*3 for c in s)` to repeat each character 3 times.
+1513,Explain how to find the character that appears most frequently in a string.,"Use `collections.Counter` and get the character with the highest count using `max(counter, key=counter.get)`."
+1514,Explain how to build a string from the diagonal elements of a square matrix.,"Assuming a square matrix, loop through the indices and collect elements where `i == j`."
+1515,Explain how to remove every second word from a sentence.,"Split the sentence, use slicing with step 2 (`words[::2]`), and join it back with spaces."
+1516,Explain how to build a list of all two-digit numbers where both digits are the same.,"Use a list comprehension: `[i for i in range(10, 100) if str(i)[0] == str(i)[1]]`."
+1517,Explain how to capitalize characters in a string at every third position.,"Loop through the string with `enumerate`, capitalize characters where index `i % 3 == 2`."
+1518,Explain how to identify whether a number is prime without using a helper function.,"Use a loop to check if number `n` is divisible by any integer from 2 to `sqrt(n)`. If so, it's not prime."
+1519,Explain how to convert a sentence into camelCase format.,"Split sentence, lowercase first word, capitalize the first letter of each subsequent word, and join: `'first' + ''.join(w.capitalize() for w in rest)`."
+1520,Explain how to check if a list of numbers is strictly increasing.,Use `all(lst[i] < lst[i+1] for i in range(len(lst)-1))` to check strictly increasing order.
+1521,Explain how to find the shortest palindrome in a list of words.,"Filter palindromes from the list, then return the one with the shortest length using `min()`."
+1522,Explain how to swap characters at even and odd indices in a string.,"Convert to list, swap every pair of characters at indices i and i+1 using a loop, then join the list back to a string."
+1523,Explain how to truncate a string to its first `n` words.,Split the string and join only the first `n` words using `' '.join(words[:n])`.
+1524,Explain how to count how many numbers in a list are divisible by both 3 and 5.,Loop through the list and count numbers divisible by both 3 and 5 using `n % 15 == 0`.
+1525,Explain how to find which character appears first more than once in a string.,"Use a set to track seen characters, return the first one encountered again."
+1526,Explain how to construct a list from the last characters of each word in a sentence.,Split the sentence and collect the last character from each word using list comprehension.
+1527,Explain how to print a right-aligned triangle of numbers using nested loops.,"Use nested loops. Outer loop for each row, inner loop for spaces and numbers. Right-align by printing decreasing spaces before numbers."
+1528,Explain how to check if a string has balanced quotes.,Track opening and closing quotes using a counter or boolean toggle. Balanced if all quotes are paired properly.
+1529,Explain how to count how many characters are between two specific characters.,"Use `str.index()` to find positions of the two characters, then subtract their indices."
+1530,Explain how to remove every word from a string that contains a digit.,"Split string into words, filter out any word that contains digits using `any(c.isdigit() for c in word)`."
+1531,Explain how to check if a string contains only punctuation characters.,Use `all(c in string.punctuation for c in s)` to verify if all characters are punctuation.
+1532,Explain how to extract the last three unique characters from a string.,"Use a reversed loop and a set to collect unique characters until you have three, then reverse the result."
+1533,Explain how to find which character occurs the least in a string.,Use `collections.Counter` and find the character with the lowest count that appears at least once.
+1534,Explain how to sum all digits in a string while skipping even numbers.,"Loop through the string, convert to digits, skip even ones, and sum the rest."
+1535,Explain how to extract every character between the first and last space in a sentence.,"Use `str.find(' ')` and `str.rfind(' ')` to find the space boundaries, then slice the substring between them."
+1536,Explain how to detect if two strings are reverses of each other.,Check if one string equals the reverse of the other: `s1 == s2[::-1]`.
+1537,Explain how to count the number of times each vowel appears in a paragraph.,"Normalize the paragraph, iterate through characters, and count vowels using a dictionary or `collections.Counter`."
+1538,Explain how to insert a character between each letter in a string.,Use `join()` with the separator character: `separator.join(s)`.
+1539,Explain how to test if a number contains more even digits than odd digits.,"Count even and odd digits in number, return True if even count > odd count."
+1540,Explain how to format a string to display only the initials of each word.,"Split sentence, take the first letter of each word, capitalize it, and join: `' '.join(w[0].upper() for w in s.split())`."
+1541,Explain how to build a string where vowels are uppercase and consonants are lowercase.,"Loop through characters, capitalize if vowel, lowercase otherwise: `c.upper() if c in 'aeiou' else c.lower()`."
+1542,Explain how to remove all characters from a string except the first and last.,"Return `s[0] + s[1:-1].replace(s[1:-1], '') + s[-1]` or simply `s[0] + s[-1]` if not empty."
+1543,Explain how to identify the first word in a sentence with repeating letters.,"Loop through words, use `collections.Counter()` to check for repeated letters, return first match."
+1544,Explain how to double the digits of a number and reassemble the result.,"Convert number to string, double each digit, and join: `''.join(str(int(d)*2) for d in str(n))`."
+1545,Explain how to check if every letter in a word appears exactly once.,Check if `len(set(word)) == len(word)` to ensure all letters are unique.
+1546,Explain how to convert a number to a string and reverse the digits.,Use `str(n)[::-1]` to reverse digits after converting to string.
+1547,Explain how to strip digits and symbols from the beginning and end of a string.,"Use regex or loop from beginning to end, removing digits and symbols with conditionals or `str.strip()`."
+1548,Explain how to replace all lowercase letters in a string with their position in the alphabet.,"Loop through each lowercase letter, get its alphabet position using `ord(c) - 96`, and replace it."
+1549,Explain how to wrap text so that no line exceeds 40 characters.,Use `textwrap.wrap()` with width=40 or manually build lines checking `len(line) < 40` while appending words.
+1550,Explain how to count how many characters in a string are surrounded by the same character.,"Loop through the string, check if the character before and after a char are the same, and count such occurrences."
+1551,Explain how to find the character that occurs an odd number of times in a string.,Use `collections.Counter` to count characters and return one with an odd count using `count % 2 == 1`.
+1552,Explain how to extract a substring that starts and ends with a vowel.,Loop through all substrings and return those where `s[0]` and `s[-1]` are vowels.
+1553,Explain how to alternate the case of each character in a string.,"Iterate over the string and use `c.upper()` if index is even, `c.lower()` if odd, or vice versa."
+1554,Explain how to return the sum of squares of only the even numbers in a list.,"Use list comprehension with condition `x % 2 == 0`, then return `sum(x**2 for x in list)`."
+1555,Explain how to replace all punctuation in a string with spaces.,Use `str.translate` with `string.punctuation` and replace punctuation with spaces.
+1556,"Explain how to reverse only the words in a sentence, not the punctuation.","Split sentence into words, reverse words list, then reattach punctuation at original positions."
+1557,Explain how to determine if a number contains the digit 7.,Convert number to string and check if `'7' in str(n)`.
+1558,Explain how to check if a list has duplicate elements without using `set()`.,Use nested loops to compare elements and return True on any duplicate match.
+1559,Explain how to remove all characters from a string except alphabetic and numeric ones.,"Use regex: `re.sub('[^a-zA-Z0-9]', '', s)` to remove all non-alphanumeric characters."
+1560,Explain how to detect whether a string contains a repeated pattern.,Use string slicing and a loop to compare repeated patterns of length > 1.
+1561,Explain how to sort a list of tuples by the sum of their elements.,Sort the list using `key=lambda t: sum(t)` to sort by the sum of each tuple.
+1562,Explain how to test whether all items in a list are single-digit integers.,"Check each item with `isinstance(i, int) and 0 <= i < 10` using `all()`."
+1563,Explain how to count the number of times a list alternates between even and odd numbers.,Loop through list and count index `i` where `parity(lst[i]) != parity(lst[i+1])`.
+1564,Explain how to build a list of integers that contain only the digit 3.,"Use list comprehension: `[i for i in range(1, 1000) if set(str(i)) == {'3'}]`."
+1565,Explain how to remove every third character from a string.,Use slicing and list comprehension to skip every 3rd character: `s[i] for i in range(len(s)) if (i+1) % 3 != 0`.
+1566,Explain how to test if a list is a mirror image of itself.,Check if `lst == lst[::-1]`.
+1567,Explain how to compute the number of matching characters at the same position in two strings.,"Compare characters at the same index in two strings using `sum(a == b for a, b in zip(s1, s2))`."
+1568,Explain how to split a sentence into alternating lists of odd- and even-positioned words.,Split sentence and use slicing: `words[::2]` and `words[1::2]` for odd and even respectively.
+1569,Explain how to replace only the first vowel in a string with an asterisk.,"Iterate through string, find first vowel with `in 'aeiouAEIOU'`, replace and break."
+1570,Explain how to remove the shortest word from a sentence.,"Split sentence, find word with `min(words, key=len)`, then remove and rejoin."
+1571,Explain how to count how many substrings in a string are palindromes.,Loop through all substrings and count those equal to their reverse.
+1572,Explain how to convert a number into a list of digits and back.,"Convert number to digits: `list(map(int, str(n)))`, back with `int(''.join(map(str, digits)))`."
+1573,Explain how to create a list of words that are palindromes and contain the letter 'a'.,Filter with `[w for w in words if w == w[::-1] and 'a' in w]`.
+1574,Explain how to sort a list of numbers without using built-in sort functions.,"Use bubble sort, selection sort, or any manual sort algorithm to reorder the list."
+1575,Explain how to create a list of prime numbers ending in 3 or 7.,"Check each number with `is_prime(n)` and `str(n)[-1] in {'3','7'}`."
+1576,Explain how to center-align every line in a paragraph to 80 characters.,Split lines and use `str.center(80)` for each line.
+1577,Explain how to group characters in a string into 4-character blocks.,Use slicing or loop to create blocks: `s[i:i+4]` in steps of 4.
+1578,Explain how to remove every word that ends with a vowel from a sentence.,"Split sentence, filter out words ending with vowels using `word[-1] not in 'aeiouAEIOU'`."
+1579,Explain how to sum all odd-positioned digits of a number.,Convert to string and sum digits at odd indices using slicing or loop.
+1580,Explain how to capitalize a string based on the number of vowels it contains.,Count vowels and use it to decide between `s.upper()` or `s.lower()`.
+1581,Explain how to return only the numbers in a list that are also palindromes.,Filter list with `str(n) == str(n)[::-1]` for palindrome check.
+1582,Explain how to strip all characters except the middle third from a string.,Calculate one-third of string length and return `s[start:end]` for the middle third.
+1583,Explain how to merge characters from two strings in alternating order.,Use `zip()` to alternate and concatenate characters from both strings.
+1584,Explain how to identify the shortest word in a string with at least three vowels.,"Split sentence, filter words with at least 3 vowels, then return one with shortest length."
+1585,Explain how to reverse the digits of a number while ignoring zeroes.,"Convert number to string, reverse, and remove zeros, then join and convert back to int."
+1586,"Explain how to find the sum of all prime-positioned letters in a word (A=1, B=2, etc.).",Sum letter positions where the index (1-based) is prime using `ord(c.lower()) - 96`.
+1587,Explain how to convert a list of booleans into a binary string.,Use `''.join(['1' if b else '0' for b in list])`.
+1588,Explain how to count the total number of palindromes in a sentence.,"Split into words, count palindromes with `w == w[::-1]`."
+1589,Explain how to extract the file extension from a filename string.,Split by `.` or `os.path.splitext(filename)[1]`.
+1590,Explain how to replace all digits in a sentence with their corresponding words.,Map each digit to its word using a dictionary and `re.sub()` or loop.
+1591,Explain how to test whether the ASCII sum of a string is even.,Sum ASCII values using `sum(ord(c) for c in s)` and check if even.
+1592,Explain how to identify the most common starting letter in a list of words.,Use `Counter(word[0] for word in words)` and return most common.
+1593,Explain how to check if a sentence is the reverse of another sentence.,Compare `s1.split()[::-1]` with `s2.split()`.
+1594,Explain how to extract every word that contains the letter ‘x’ from a sentence.,Split sentence and filter with `'x' in word.lower()`.
+1595,Explain how to find the middle word in a sentence with an odd number of words.,Split sentence and return the middle word using `len(words)//2`.
+1596,Explain how to check if every word in a list is lowercase.,Check `all(word.islower() for word in words)`.
+1597,Explain how to determine if a string contains an equal number of vowels and consonants.,"Count vowels and consonants, compare counts for equality."
+1598,Explain how to replace every space in a string with the number of the word it separates.,"Split sentence, insert word number between each word as a string."
+1599,Explain how to extract a list of words that are longer than 7 letters.,Use list comprehension with `len(w) > 7`.
+1600,Explain how to build a dictionary where each key is a word and the value is its length.,Use dictionary comprehension: `{word: len(word) for word in words}`.

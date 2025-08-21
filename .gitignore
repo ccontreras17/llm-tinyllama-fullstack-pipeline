@@ -1,0 +1,24 @@
+# PyCharm junk
+.idea/
+
+# Virtual env
+venv/
+
+# Project-specific folders to ignore
+exports/
+notebooks/
+prompt_data/
+
+# Python garbage
+__pycache__/
+*.py[cod]
+*.log
+
+# Jupyter sadness
+.ipynb_checkpoints/
+
+# Ignore test script that dares to check your code
+**/test.py
+
+
+

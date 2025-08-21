@@ -1,0 +1,101 @@
+id,prompt,response
+101,Explain why this Python code raises an error: `print(unknown_variable)`,Because 'unknown_variable' is not defined.
+102,Write a Python function that takes a list and returns only unique elements while preserving order.,def unique_order(lst): seen=set(); return [x for x in lst if not (x in seen or seen.add(x))]
+103,Refactor this nested loop into a list comprehension: `for i in range(5): for j in range(5): result.append(i*j)`,result = [i*j for i in range(5) for j in range(5)]
+104,Write Python code to merge two dictionaries recursively.,"def recursive_merge(d1,d2): from collections.abc import Mapping; for k,v in d2.items(): d1[k] = recursive_merge(d1.get(k,{}),v) if isinstance(v,Mapping) else v; return d1"
+105,Explain what the `zip()` function does in Python.,It pairs elements from multiple iterables into tuples.
+106,"Write a Python function that counts how many times each character appears in a string, case-insensitive.",from collections import Counter; def count_chars(s): return dict(Counter(s.lower()))
+107,"Given a list of strings, write Python code to sort them by length.","def sort_by_length(lst): return sorted(lst, key=len)"
+108,Write a Python script that reads a text file and prints the 10 most common words.,from collections import Counter; print(Counter(open('file.txt').read().split()).most_common(10))
+109,Explain the difference between `deepcopy` and `copy` in Python.,'copy' creates a shallow copy; 'deepcopy' copies nested objects fully.
+110,Write Python code that checks if a list is a palindrome.,def is_palindrome(lst): return lst == lst[::-1]
+111,Write a Python function that takes a string and returns True if it is a valid email address.,"import re; def valid_email(s): return bool(re.match(r'^[\w.-]+@[\w.-]+\.\w+$', s))"
+112,Explain what a generator is in Python and how it differs from a list.,"A generator yields items lazily, lists store all items in memory."
+113,Write a Python function that returns the intersection of two lists.,"def intersect(a,b): return list(set(a)&set(b))"
+114,Refactor this code to remove the global variable: `counter = 0; def increment(): global counter; counter += 1`,def make_incrementer(): counter=0; def inc(): nonlocal counter; counter+=1; return counter
+115,Write Python code to flatten a nested dictionary into a single-level dictionary with keys joined by dots.,"def flatten_dict(d,p=''): items={}; [items.update(flatten_dict(v,f'{p}{k}.')) if isinstance(v,dict) else items.update({f'{p}{k}':v}) for k,v in d.items()]; return items"
+116,Write a Python function that takes a list of integers and returns a new list with only the even numbers squared.,def evens_squared(lst): return [x**2 for x in lst if x%2==0]
+117,Explain what the `*args` and `**kwargs` parameters do.,"*args collects positional args, **kwargs collects keyword args as dict."
+118,Write a Python function that validates if a string contains only ASCII characters.,def is_ascii(s): return all(ord(c) < 128 for c in s)
+119,"Given two dates as strings, write Python code to compute the number of days between them.","from datetime import datetime; def date_diff(a,b): return abs((datetime.strptime(a,'%Y-%m-%d') - datetime.strptime(b,'%Y-%m-%d')).days)"
+120,Explain why mutable default arguments can be problematic in Python functions.,"They persist across calls, leading to unexpected behavior."
+121,Write Python code that converts a list of integers to a comma-separated string.,"def to_csv(lst): return ','.join(map(str,lst))"
+122,Write a Python function to detect whether a string is a pangram.,import string; def is_pangram(s): return set(string.ascii_lowercase) <= set(s.lower())
+123,Explain the difference between `classmethod` and `staticmethod`.,classmethod gets the class as the first arg; staticmethod gets nothing extra.
+124,Write a Python function that takes a dictionary and returns a new dictionary with keys and values swapped.,"def swap_dict(d): return {v:k for k,v in d.items()}"
+125,Write Python code that finds the longest common prefix in a list of strings.,def longest_prefix(strs): from os.path import commonprefix; return commonprefix(strs)
+126,Explain what a decorator is and provide an example.,"A decorator wraps a function. Example: def deco(f): def wrap(*a,**kw): return f(*a,**kw); return wrap"
+127,Write a Python script to download the content of a URL and save it to a file.,"import requests; open('file.txt','wb').write(requests.get('URL').content)"
+128,Write Python code that converts a JSON string to a dictionary.,import json; def json_to_dict(s): return json.loads(s)
+129,Explain what `__init__` does in a Python class.,It initializes an object’s attributes when the class is instantiated.
+130,Write a Python function that sorts a list of dictionaries by a specific key.,"def sort_dicts(lst, key): return sorted(lst, key=lambda x: x[key])"
+131,Write Python code to create a namedtuple and use it.,"from collections import namedtuple; Point = namedtuple('Point', 'x y'); p = Point(1,2)"
+132,Explain how the `with` statement works for files.,It automatically opens and closes the file safely.
+133,Write a Python function to parse a query string into a dictionary.,"from urllib.parse import parse_qs; def parse_query(q): return {k:v[0] for k,v in parse_qs(q).items()}"
+134,"Write Python code to calculate the mean, median, and mode of a list.","import statistics as s; def stats(lst): return s.mean(lst), s.median(lst), s.mode(lst)"
+135,Explain the purpose of `__str__` and `__repr__`.,"__str__ is for user-friendly string, __repr__ is for debugging."
+136,Write Python code that rotates a list n positions to the right.,"def rotate(lst, n): return lst[-n:] + lst[:-n]"
+137,Write a Python function to check if a string is a valid IPv4 address.,"import re; def valid_ipv4(s): return bool(re.match(r'^(\d{1,3}\.){3}\d{1,3}$', s))"
+138,Explain the difference between `is` and `==`.,"'is' checks identity, '==' checks equality."
+139,Write Python code to remove all falsy values from a list.,def remove_falsy(lst): return [x for x in lst if x]
+140,Write a Python function to chunk a list into sublists of a given size.,"def chunk(lst, size): return [lst[i:i+size] for i in range(0,len(lst),size)]"
+141,Explain what `lambda` functions are and give an example.,A lambda is an anonymous function: e.g. square = lambda x: x*x
+142,Write a Python script that reads a CSV file and prints rows where a specific column matches a value.,import csv; [print(r) for r in csv.DictReader(open('file.csv')) if r['col'] == 'value']
+143,Write Python code to reverse a dictionary mapping (values to keys).,"def reverse_dict(d): return {v:k for k,v in d.items()}"
+144,Explain what the `enumerate()` function does.,It adds an index to items in a loop.
+145,Write a Python function to validate if a string is a valid hexadecimal number.,def is_hex(s): return all(c in '0123456789abcdefABCDEF' for c in s)
+146,Write Python code that merges two sorted lists into a single sorted list.,"def merge_sorted(a,b): return sorted(a+b)"
+147,Explain the concept of duck typing in Python.,"If it walks like a duck and quacks like a duck, it’s a duck — behavior > type."
+148,Write a Python script to rename all `.txt` files in a directory to have a `_backup` suffix.,"import os; [os.rename(f, f.replace('.txt','_backup.txt')) for f in os.listdir() if f.endswith('.txt')]"
+149,Write Python code to remove all HTML tags from a string.,"import re; def strip_html(s): return re.sub(r'<[^>]*>','',s)"
+150,Write a Python function that generates all substrings of a given string.,"def substrings(s): return [s[i:j] for i in range(len(s)) for j in range(i+1,len(s)+1)]"
+151,Explain the Global Interpreter Lock (GIL).,"GIL ensures only one thread executes Python bytecode at a time, limiting true parallelism."
+152,Write Python code to find the longest increasing subsequence in a list.,"def lis(seq): from bisect import bisect_left; sub=[]; [sub.append(x) if not sub or x>sub[-1] else sub.__setitem__(bisect_left(sub,x),x) for x in seq]; return sub"
+153,Write a Python script to zip an entire folder.,"import shutil; shutil.make_archive('archive','zip','folder_path')"
+154,Write Python code to validate a credit card number using the Luhn algorithm.,"def luhn(card): digits=[int(d) for d in str(card)][::-1]; return sum(d if i%2==0 else sum(divmod(d*2,10)) for i,d in enumerate(digits)) % 10 == 0"
+155,Explain how `__getitem__` works in custom classes.,__getitem__ lets instances use indexing like obj[key] by defining it in the class.
+156,Write a Python function to compute the nth Catalan number.,"def catalan(n): from math import comb; return comb(2*n,n)//(n+1)"
+157,Write Python code to list all running processes (use `psutil`).,"import psutil; [p.info for p in psutil.process_iter(['pid','name'])]"
+158,Write a Python function to check if a matrix is symmetric.,def is_symmetric(m): return m == [list(row) for row in zip(*m)]
+159,Explain why `float('nan') != float('nan')` evaluates to True.,"Because NaN is not equal to anything, even itself (IEEE standard)."
+160,Write Python code to parse XML and extract all text content.,import xml.etree.ElementTree as ET; def extract_text(xml): return ''.join(ET.fromstring(xml).itertext())
+161,Write a Python function to serialize a dictionary to a JSON file.,"import json; def save_json(d,f): json.dump(d, open(f,'w'), indent=2)"
+162,Write Python code to compute the SHA-256 hash of a string.,import hashlib; def sha256(s): return hashlib.sha256(s.encode()).hexdigest()
+163,Explain what context managers are and how to create one.,They manage resources using `with`; define __enter__ and __exit__ to make one.
+164,Write Python code to detect circular references in a graph.,"def has_cycle(g): visited=set(); def dfs(v, path): if v in path: return True; path.add(v); for n in g.get(v,[]): if dfs(n,path): return True; path.remove(v); return False; return any(dfs(n,set()) for n in g)"
+165,Write a Python function to solve the Tower of Hanoi problem.,"def hanoi(n,a,b,c): if n: hanoi(n-1,a,c,b); print(a,'->',c); hanoi(n-1,b,a,c)"
+166,Explain how `super()` works in multiple inheritance.,super() accesses methods from the next class in MRO without explicit naming.
+167,Write Python code to create a simple REST API with Flask.,from flask import Flask; app=Flask(__name__); @app.route('/')\ndef home(): return 'Hello'; app.run()
+168,Write a Python script to monitor memory usage over time.,"import psutil,time; [print(psutil.virtual_memory().used) or time.sleep(1) for _ in range(10)]"
+169,Write a Python function to pretty-print a nested dictionary.,"import pprint; def pretty(d): pprint.pprint(d, indent=2)"
+170,Explain what monkey patching is.,"Changing or extending code at runtime, often used for quick hacks."
+171,Write Python code to implement a basic caching decorator.,"def cache(f): memo={}; def wrap(*a): return memo[a] if a in memo else memo.setdefault(a, f(*a)); return wrap"
+172,Write a Python function to detect if a string is a valid UUID.,import uuid; def is_uuid(s): try: uuid.UUID(s); return True; except: return False
+173,Write Python code to generate prime numbers up to n.,"def primes(n): return [x for x in range(2,n+1) if all(x%i for i in range(2,int(x**0.5)+1))]"
+174,Explain the difference between `map()` and list comprehensions.,map() returns a lazy iterator; list comps are clearer and often faster for simple tasks.
+175,Write Python code to parse and validate cron expressions.,"import re; def valid_cron(expr): return bool(re.match(r'^(\S+\s+){4}\S+$', expr))"
+176,Write a Python script to convert Markdown to HTML.,import markdown; def md_to_html(text): return markdown.markdown(text)
+177,Write Python code to create a progress bar during iteration.,from tqdm import tqdm; [x for x in tqdm(range(1000))]
+178,Explain what the `__slots__` attribute does in classes.,__slots__ restricts dynamic attribute creation and saves memory.
+179,Write a Python function to balance parentheses in a string.,def balance_parens(s): count=0; return all((count:=count+1 if c=='(' else count-1)>=0 for c in s if c in '()') and count==0
+180,Write Python code to simulate rolling two dice 1000 times.,"import random; rolls=[(random.randint(1,6), random.randint(1,6)) for _ in range(1000)]"
+181,Explain why `list` is mutable but `tuple` is not.,Lists can change after creation; tuples are fixed (immutable).
+182,Write Python code to generate random passwords with given constraints.,"import random,string; def gen_pw(n): return ''.join(random.choices(string.ascii_letters+string.digits,k=n))"
+183,Write a Python function to implement binary search.,"def binary_search(lst,x): l,r=0,len(lst)-1; while l<=r: m=(l+r)//2; if lst[m]==x: return m; l,r = (m+1,r) if lst[m]<x else (l,m-1); return -1"
+184,Write Python code to create a min-heap using `heapq`.,"import heapq; heap=[]; [heapq.heappush(heap,x) for x in [3,1,4]]"
+185,Explain how coroutines differ from regular generators.,Coroutines can pause and resume with values using 'await'; generators use 'yield'.
+186,Write a Python script to find duplicate files in a directory.,"import os,hashlib; def dupes(path): seen={}; [seen.setdefault(hashlib.md5(open(f,'rb').read()).hexdigest(),[]).append(f) for f in os.listdir(path)]; return [v for v in seen.values() if len(v)>1]"
+187,Write Python code to parse INI configuration files.,import configparser; cfg=configparser.ConfigParser(); cfg.read('file.ini')
+188,Write a Python function to compute Levenshtein distance.,"def levenshtein(a,b): dp=[[0]*(len(b)+1) for _ in range(len(a)+1)]; [dp[i].__setitem__(0,i) for i in range(len(a)+1)]; [dp[0].__setitem__(j,j) for j in range(len(b)+1)]; [[dp[i].__setitem__(j,min(dp[i-1][j]+1,dp[i][j-1]+1,dp[i-1][j-1]+(a[i-1]!=b[j-1]))) for j in range(1,len(b)+1)] for i in range(1,len(a)+1)]; return dp[-1][-1]"
+189,Explain the purpose of `__enter__` and `__exit__`.,"__enter__ sets up context, __exit__ tears it down (e.g. open files)."
+190,Write Python code to validate if a string is a palindrome ignoring case and punctuation.,"import re; def is_palindrome(s): s=re.sub(r'[^a-z0-9]','',s.lower()); return s==s[::-1]"
+191,Write a Python script to check if a port is open on a remote server.,"import socket; def check_port(host,port): s=socket.socket(); return s.connect_ex((host,port))==0"
+192,Write Python function to serialize and deserialize a binary tree.,def serialize(root): return preorder(root); def deserialize(data): pass  # Typically uses recursion and queue
+193,Explain the `async` and `await` keywords.,async defines an async function; await pauses until result of async call.
+194,Write Python code to find all permutations of a list.,from itertools import permutations; def all_perms(lst): return list(permutations(lst))
+195,Write a Python script to watch a directory for file changes.,"import watchdog.events,watchdog.observers,time; class H(watchdog.events.FileSystemEventHandler): def on_modified(self,e): print('Changed:',e.src_path); obs=watchdog.observers.Observer(); obs.schedule(H(), path='.', recursive=True); obs.start(); time.sleep(10); obs.stop()"
+196,Explain what memoization is.,Caching technique that stores function results to avoid recalculation.
+197,Write Python code to generate Fibonacci numbers iteratively.,"def fib(n): a,b=[],0,1; [a.append(b) or (b:=a[-1]+b if a else 1) for _ in range(n)]; return a"
+198,Write a Python function to convert Roman numerals to integers.,"def roman_to_int(s): m={'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}; total=0; prev=0; for c in reversed(s): val=m[c]; total += val if val >= prev else -val; prev=val; return total"
+199,Explain how `yield` works in Python.,yield pauses a function saving its state; resumes from there on next call.
+200,Write Python code to validate if a string contains balanced brackets.,"def balanced_brackets(s): stack=[]; pairs={')':'(','}':'{',']':'['}; for c in s: stack.append(c) if c in '({[' else (stack.pop() if stack and stack[-1]==pairs.get(c) else stack.append('?')); return not stack"

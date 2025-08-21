@@ -1,0 +1,101 @@
+id,prompt,response
+1801,Explain how to remove spaces from the start and end of a string.,Use `s.strip()`.
+1802,Explain how to return True if all elements in a list are unique.,Compare `len(lst)` with `len(set(lst))`.
+1803,Explain how to create a list of all uppercase letters from a string.,List comprehension: `[c for c in s if c.isupper()]`.
+1804,Explain how to sort a dictionary by keys.,Use `dict(sorted(d.items()))`.
+1805,Explain how to capitalize only the first and last words in a sentence.,"Split, capitalize first and last word, join back."
+1806,Explain how to count how many times each word appears in a list of sentences.,Use nested loops and `Counter` on words across sentences.
+1807,Explain how to filter out all `None` values from a list.,Filter with list comprehension: `[x for x in lst if x is not None]`.
+1808,Explain how to check if a given string is in title case.,Use `s.istitle()`.
+1809,Explain how to generate a list of all odd numbers between 10 and 100.,"Use list comprehension: `[i for i in range(11,100,2)]`."
+1810,Explain how to reverse a string using slicing.,Use `s[::-1]`.
+1811,Explain how to check if a word contains all vowels.,Check all vowels in `set(word.lower())`.
+1812,Explain how to extract all characters in a string that appear more than once.,"Use `Counter`, filter `count > 1`."
+1813,Explain how to remove every second item from a list.,Use slicing: `lst[::2]` or delete by index.
+1814,Explain how to replace digits in a string with their word equivalents.,Use a digit-to-word dict and loop replace.
+1815,Explain how to convert a string to lowercase without using `lower()`.,Use `''.join(chr(ord(c)+32) if 'A'<=c<='Z' else c for c in s)`.
+1816,Explain how to add up the values of a list without using `sum()`.,Loop through list and add manually.
+1817,Explain how to return the word in a sentence with the highest number of consonants.,"Loop through words, count consonants, return max."
+1818,Explain how to generate a list of random letters.,"Use `random.choices(string.ascii_letters, k=n)`."
+1819,Explain how to split a sentence into a list of words using `split()`.,Use `sentence.split()`.
+1820,Explain how to remove punctuation from the beginning and end of words.,Use `word.strip(string.punctuation)` per word.
+1821,Explain how to sort a list of strings by the last letter.,Sort with key `lambda x: x[-1]`.
+1822,Explain how to convert a character to its ASCII code.,Use `ord(char)`.
+1823,Explain how to check if a character is a digit using `isdigit()`.,Use `char.isdigit()`.
+1824,Explain how to flatten a list of tuples into a single list.,Use list comprehension: `[x for t in lst for x in t]`.
+1825,Explain how to return the last word of a sentence.,Use `sentence.split()[-1]`.
+1826,Explain how to group words in a list by their first character.,Group in dict by first letter key.
+1827,Explain how to convert a list of strings to a single string with a space separator.,Use `' '.join(lst)`.
+1828,Explain how to test if all characters in a string are the same.,Check `len(set(s)) == 1`.
+1829,Explain how to extract all uppercase letters from a sentence.,Filter with `[c for c in s if c.isupper()]`.
+1830,Explain how to create a dictionary that maps words to their lengths.,Dict comprehension: `{w: len(w) for w in lst}`.
+1831,Explain how to find the number of vowels in each word in a list.,"Loop words, count vowels with `sum(1 for c in w if c in 'aeiouAEIOU')`."
+1832,Explain how to detect duplicate words in a sentence.,"Split sentence, check duplicates with `set()` or `Counter`."
+1833,Explain how to get the third character of each word in a list.,Use slicing: `[w[2] for w in lst if len(w) > 2]`.
+1834,Explain how to identify all characters that appear only once in a string.,"Use `Counter`, filter `count == 1`."
+1835,Explain how to return the string length without using `len()`.,Loop through string and count manually.
+1836,Explain how to reverse a tuple.,Use slicing: `t[::-1]`.
+1837,Explain how to join a list of numbers into a single string.,Use `''.join(str(n) for n in lst)`.
+1838,Explain how to capitalize every vowel in a string.,Use `''.join(c.upper() if c in 'aeiouAEIOU' else c for c in s)`.
+1839,Explain how to return the first repeated letter in a string.,"Track seen letters, return first that repeats."
+1840,Explain how to count how many times each digit appears in a number.,Use `Counter(str(n))`.
+1841,Explain how to filter out all uppercase words from a sentence.,"Split sentence, filter with `word.isupper()`."
+1842,Explain how to remove items from a list that are shorter than 4 characters.,Filter: `[w for w in lst if len(w) >= 4]`.
+1843,Explain how to convert a list of numbers to floats.,Use list comprehension: `[float(x) for x in lst]`.
+1844,Explain how to create a string that alternates between uppercase and lowercase.,Alternate case with index in loop or comprehension.
+1845,Explain how to replace all instances of the letter 'a' with '@'.,"Use `s.replace('a','@').replace('A','@')`."
+1846,Explain how to find the longest number in a list of strings.,Sort by `len(s)` and return last.
+1847,Explain how to test if a string contains both letters and numbers.,Check if any `c.isalpha()` and any `c.isdigit()`.
+1848,Explain how to format a number with commas as thousands separators.,"Use `f'{n:,}'` or `format(n, ',')`."
+1849,Explain how to find the index of the second occurrence of a character in a string.,"Use `s.find(c, s.find(c)+1)`."
+1850,Explain how to remove trailing zeros from a number.,"Convert to string, use `rstrip('0')`, back to int/float."
+1851,Explain how to convert a string of numbers into a list of integers.,Use `[int(c) for c in s]` if no separator.
+1852,Explain how to find the total number of lowercase vowels in a paragraph.,Use `sum(1 for c in text if c in 'aeiou')`.
+1853,Explain how to extract every third character from a string.,Use slicing: `s[::3]`.
+1854,Explain how to replace all consonants in a word with '#'.,Replace non-vowels with `'#'` using a loop or comprehension.
+1855,Explain how to reverse the digits in a number using arithmetic.,Use modulo/divide in a loop to build reversed number.
+1856,Explain how to check if a string is alphabetic without using `isalpha()`.,Check `all(c.isalpha() for c in s)` manually.
+1857,Explain how to return the last digit of each number in a list.,Use `[n % 10 for n in lst]`.
+1858,Explain how to remove duplicate digits from a number.,"Convert to string, use `dict.fromkeys`, join and int."
+1859,Explain how to convert a single string of comma-separated words into a list.,"Use `s.split(',')`."
+1860,Explain how to test if a number is a palindrome without using strings.,Reverse using arithmetic and compare to original.
+1861,Explain how to return the most frequent vowel in a sentence.,"Use `Counter` on vowels, return max."
+1862,Explain how to return a list of booleans indicating if each number in a list is even.,Use `[n % 2 == 0 for n in lst]`.
+1863,Explain how to replace numbers in a list with their square roots.,Use `[math.sqrt(n) for n in lst]`.
+1864,Explain how to replace all non-vowel letters in a string with dashes.,Replace consonants with dash using a loop.
+1865,Explain how to sort a list of integers as strings by their length.,Sort with `key=len` on `str(n)`.
+1866,Explain how to determine if a word has alternating cases.,Loop and check case alternation at each index.
+1867,Explain how to reverse a string using a for loop.,"Loop backward, append to new string."
+1868,Explain how to check if all characters in a list are lowercase.,Use `all(c.islower() for c in lst)`.
+1869,Explain how to count the number of capital letters in a string.,Use `sum(1 for c in s if c.isupper())`.
+1870,Explain how to extract only the numbers that are multiples of 3 from a list.,Use `[n for n in lst if n % 3 == 0]`.
+1871,Explain how to format each word in a sentence to start with a capital and end with a period.,"Capitalize first letter, add period using list comp."
+1872,Explain how to check if the sum of two digits equals the third in a 3-digit number.,"Extract digits, check `a + b == c`."
+1873,Explain how to return the sum of digits in a number using recursion.,Base case `n == 0`; else `n % 10 + recurse(n // 10)`.
+1874,Explain how to check if a string contains any repeated characters.,Use `len(set(s)) != len(s)`.
+1875,Explain how to extract a list of words that start and end with a vowel.,Filter with condition `w[0] in vowels and w[-1] in vowels`.
+1876,Explain how to format a date string into DD-MM-YYYY format.,Use slicing and f-string: `f'{d[0:2]}-{d[2:4]}-{d[4:]}'`.
+1877,Explain how to count the number of alphabetic characters in a string.,Count letters with `sum(c.isalpha() for c in s)`.
+1878,Explain how to detect whether a list contains nested lists.,"Check `any(isinstance(i, list) for i in lst)`."
+1879,Explain how to check if a character appears at the same index in two strings.,Loop over zipped strings and check index match.
+1880,Explain how to return the number of unique characters in a word.,Use `len(set(word))`.
+1881,Explain how to extract the first letter of each word in a sentence.,Use `[w[0] for w in sentence.split()]`.
+1882,Explain how to check if a list of numbers is sorted.,Compare list with `sorted(lst)`.
+1883,Explain how to convert a list of integers into a string of digits.,Use `''.join(str(i) for i in lst)`.
+1884,Explain how to group words that share the same ending letter.,Group in dict by last character.
+1885,Explain how to determine if a list has duplicate numbers.,Compare length of list and `set(lst)`.
+1886,Explain how to reverse a dictionary’s keys and values.,"Use `{v: k for k, v in d.items()}`."
+1887,Explain how to round all numbers in a list to the nearest 10.,"Use `[round(n, -1) for n in lst]`."
+1888,Explain how to return all the letters in a string that are in even positions.,Use slicing: `s[1::2]`.
+1889,Explain how to create a list of strings of length 5 from a longer list.,Use `[w for w in lst if len(w) == 5]`.
+1890,Explain how to count how many words in a list start with 'th'.,Use `sum(w.startswith('th') for w in lst)`.
+1891,Explain how to extract all characters from a string that are not letters.,Filter with `not c.isalpha()`.
+1892,Explain how to replace all uppercase letters in a word with lowercase except the first.,"Capitalize first letter, lowercase rest: `w[0].upper() + w[1:].lower()`."
+1893,Explain how to create a function that returns the number of lines in a string.,Use `s.count('\\n') + 1`.
+1894,Explain how to detect if a sentence contains only unique words.,"Split, check `len(set(words)) == len(words)`."
+1895,Explain how to format an integer to show as binary with leading zeroes.,"Use `format(n, '08b')`."
+1896,Explain how to find the second digit from the right in a number.,Use `(n // 10) % 10`.
+1897,Explain how to test if a list of strings contains any duplicates.,Check `len(set(lst)) != len(lst)`.
+1898,Explain how to extract all two-digit numbers from a string.,"Use regex: `re.findall(r'\\b\\d{2}\\b', s)`."
+1899,Explain how to build a new list with every other item in reverse.,Use `lst[::-2]`.
+1900,Explain how to return a list of string lengths sorted in descending order.,"Use `sorted([len(s) for s in lst], reverse=True)`."

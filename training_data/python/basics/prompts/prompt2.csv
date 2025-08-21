@@ -1,0 +1,101 @@
+id,prompt
+101,Explain why this Python code raises an error: `print(unknown_variable)`
+102,Write a Python function that takes a list and returns only unique elements while preserving order.
+103,Refactor this nested loop into a list comprehension: `for i in range(5): for j in range(5): result.append(i*j)`
+104,Write Python code to merge two dictionaries recursively.
+105,Explain what the `zip()` function does in Python.
+106,"Write a Python function that counts how many times each character appears in a string, case-insensitive."
+107,"Given a list of strings, write Python code to sort them by length."
+108,Write a Python script that reads a text file and prints the 10 most common words.
+109,Explain the difference between `deepcopy` and `copy` in Python.
+110,Write Python code that checks if a list is a palindrome.
+111,Write a Python function that takes a string and returns True if it is a valid email address.
+112,Explain what a generator is in Python and how it differs from a list.
+113,Write a Python function that returns the intersection of two lists.
+114,Refactor this code to remove the global variable: `counter = 0; def increment(): global counter; counter += 1`
+115,Write Python code to flatten a nested dictionary into a single-level dictionary with keys joined by dots.
+116,Write a Python function that takes a list of integers and returns a new list with only the even numbers squared.
+117,Explain what the `*args` and `**kwargs` parameters do.
+118,Write a Python function that validates if a string contains only ASCII characters.
+119,"Given two dates as strings, write Python code to compute the number of days between them."
+120,Explain why mutable default arguments can be problematic in Python functions.
+121,Write Python code that converts a list of integers to a comma-separated string.
+122,Write a Python function to detect whether a string is a pangram.
+123,Explain the difference between `classmethod` and `staticmethod`.
+124,Write a Python function that takes a dictionary and returns a new dictionary with keys and values swapped.
+125,Write Python code that finds the longest common prefix in a list of strings.
+126,Explain what a decorator is and provide an example.
+127,Write a Python script to download the content of a URL and save it to a file.
+128,Write Python code that converts a JSON string to a dictionary.
+129,Explain what `__init__` does in a Python class.
+130,Write a Python function that sorts a list of dictionaries by a specific key.
+131,Write Python code to create a namedtuple and use it.
+132,Explain how the `with` statement works for files.
+133,Write a Python function to parse a query string into a dictionary.
+134,"Write Python code to calculate the mean, median, and mode of a list."
+135,Explain the purpose of `__str__` and `__repr__`.
+136,Write Python code that rotates a list n positions to the right.
+137,Write a Python function to check if a string is a valid IPv4 address.
+138,Explain the difference between `is` and `==`.
+139,Write Python code to remove all falsy values from a list.
+140,Write a Python function to chunk a list into sublists of a given size.
+141,Explain what `lambda` functions are and give an example.
+142,Write a Python script that reads a CSV file and prints rows where a specific column matches a value.
+143,Write Python code to reverse a dictionary mapping (values to keys).
+144,Explain what the `enumerate()` function does.
+145,Write a Python function to validate if a string is a valid hexadecimal number.
+146,Write Python code that merges two sorted lists into a single sorted list.
+147,Explain the concept of duck typing in Python.
+148,Write a Python script to rename all `.txt` files in a directory to have a `_backup` suffix.
+149,Write Python code to remove all HTML tags from a string.
+150,Write a Python function that generates all substrings of a given string.
+151,Explain the Global Interpreter Lock (GIL).
+152,Write Python code to find the longest increasing subsequence in a list.
+153,Write a Python script to zip an entire folder.
+154,Write Python code to validate a credit card number using the Luhn algorithm.
+155,Explain how `__getitem__` works in custom classes.
+156,Write a Python function to compute the nth Catalan number.
+157,Write Python code to list all running processes (use `psutil`).
+158,Write a Python function to check if a matrix is symmetric.
+159,Explain why `float('nan') != float('nan')` evaluates to True.
+160,Write Python code to parse XML and extract all text content.
+161,Write a Python function to serialize a dictionary to a JSON file.
+162,Write Python code to compute the SHA-256 hash of a string.
+163,Explain what context managers are and how to create one.
+164,Write Python code to detect circular references in a graph.
+165,Write a Python function to solve the Tower of Hanoi problem.
+166,Explain how `super()` works in multiple inheritance.
+167,Write Python code to create a simple REST API with Flask.
+168,Write a Python script to monitor memory usage over time.
+169,Write a Python function to pretty-print a nested dictionary.
+170,Explain what monkey patching is.
+171,Write Python code to implement a basic caching decorator.
+172,Write a Python function to detect if a string is a valid UUID.
+173,Write Python code to generate prime numbers up to n.
+174,Explain the difference between `map()` and list comprehensions.
+175,Write Python code to parse and validate cron expressions.
+176,Write a Python script to convert Markdown to HTML.
+177,Write Python code to create a progress bar during iteration.
+178,Explain what the `__slots__` attribute does in classes.
+179,Write a Python function to balance parentheses in a string.
+180,Write Python code to simulate rolling two dice 1000 times.
+181,Explain why `list` is mutable but `tuple` is not.
+182,Write Python code to generate random passwords with given constraints.
+183,Write a Python function to implement binary search.
+184,Write Python code to create a min-heap using `heapq`.
+185,Explain how coroutines differ from regular generators.
+186,Write a Python script to find duplicate files in a directory.
+187,Write Python code to parse INI configuration files.
+188,Write a Python function to compute Levenshtein distance.
+189,Explain the purpose of `__enter__` and `__exit__`.
+190,Write Python code to validate if a string is a palindrome ignoring case and punctuation.
+191,Write a Python script to check if a port is open on a remote server.
+192,Write Python function to serialize and deserialize a binary tree.
+193,Explain the `async` and `await` keywords.
+194,Write Python code to find all permutations of a list.
+195,Write a Python script to watch a directory for file changes.
+196,Explain what memoization is.
+197,Write Python code to generate Fibonacci numbers iteratively.
+198,Write a Python function to convert Roman numerals to integers.
+199,Explain how `yield` works in Python.
+200,Write Python code to validate if a string contains balanced brackets.

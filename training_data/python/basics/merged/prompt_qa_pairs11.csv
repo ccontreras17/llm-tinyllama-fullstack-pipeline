@@ -1,0 +1,101 @@
+id,prompt,response
+1001,Write a Python function to return True if all words in a sentence have unique lengths.,def unique_word_lengths(s): l=[len(w) for w in s.split()]; return len(set(l))==len(l)
+1002,Write a Python script to find the longest substring with alternating vowels and consonants.,"def longest_alt_vowel_consonant(s): import re; return max(re.findall(r'(?i)(?:(?:[aeiou][^aeiou])|(?:[^aeiou][aeiou]))+', s), key=len, default='')"
+1003,Write a Python function to return the average of ASCII values in a string.,"def avg_ascii(s): return sum(map(ord,s))/len(s) if s else 0"
+1004,Write a Python script to filter out all words in a list that contain repeated characters.,def no_repeats(lst): return [w for w in lst if len(set(w))==len(w)]
+1005,Write a Python function to remove the first and last vowel in a string.,"def remove_first_last_vowel(s): v=[i for i,c in enumerate(s) if c.lower() in 'aeiou']; return s[:v[0]]+s[v[0]+1:v[-1]]+s[v[-1]+1:] if len(v)>=2 else s"
+1006,Write a Python script to reverse every word in a sentence that contains a digit.,def reverse_words_with_digit(s): return ' '.join(w[::-1] if any(c.isdigit() for c in w) else w for w in s.split())
+1007,Write a Python function to count how many times each vowel appears in alphabetical order.,def vowel_order_count(s): return [s.lower().count(v) for v in 'aeiou']
+1008,Write a Python script to convert every third letter in a sentence to uppercase.,"def every_third_upper(s): return ''.join(c.upper() if i%3==2 else c for i,c in enumerate(s))"
+1009,Write a Python function to return a list of integers that are palindromes when doubled.,def palindromes_when_doubled(lst): return [x for x in lst if str(x*2)==str(x*2)[::-1]]
+1010,Write a Python script to identify all positions in a list where an item is greater than its neighbors.,"def local_maxima(lst): return [i for i in range(1,len(lst)-1) if lst[i]>lst[i-1] and lst[i]>lst[i+1]]"
+1011,Write a Python function to replace each digit in a number with its cube.,def cube_digits(n): return int(''.join(str(int(d)**3) for d in str(n)))
+1012,Write a Python script to extract all characters in a string that are not letters or numbers.,def non_alnum(s): return [c for c in s if not c.isalnum()]
+1013,Write a Python function to return True if a word contains at least two different vowels.,def two_vowels(w): return len(set(c for c in w.lower() if c in 'aeiou'))>=2
+1014,Write a Python script to remove every consonant that appears more than once in a string.,def remove_repeated_consonants(s): return ''.join(c for c in s if c.lower() in 'aeiou' or s.lower().count(c)==1)
+1015,Write a Python function to sort a list of words by the number of distinct characters.,"def sort_by_unique_chars(lst): return sorted(lst, key=lambda w: len(set(w)))"
+1016,Write a Python script to convert each word in a sentence to lowercase and reverse it.,def reverse_lower_words(s): return ' '.join(w.lower()[::-1] for w in s.split())
+1017,Write a Python function to calculate the difference between the sum of vowels and consonants in a word.,def vowel_consonant_diff(w): v=sum(1 for c in w if c.lower() in 'aeiou'); c=sum(1 for c in w if c.isalpha() and c.lower() not in 'aeiou'); return v-c
+1018,Write a Python script to replace every letter in a string with the previous letter in the alphabet.,def prev_letter(s): return ''.join(chr(ord(c)-1) if c.isalpha() else c for c in s)
+1019,Write a Python function to return all strings in a list that are made entirely of vowels.,def only_vowel_words(lst): return [w for w in lst if all(c.lower() in 'aeiou' for c in w)]
+1020,Write a Python script to split a number into two halves and reverse both.,def reverse_halves(n): s=str(n); h=len(s)//2; return s[:h][::-1]+s[h:][::-1]
+1021,Write a Python function to return a string of only the characters at positions that are multiples of 3.,"def chars_multiple_of_3(s): return ''.join(c for i,c in enumerate(s) if i%3==0)"
+1022,Write a Python script to check whether the first letter of every word in a sentence is a vowel.,def all_words_start_vowel(s): return all(w[0].lower() in 'aeiou' for w in s.split())
+1023,Write a Python function to double every letter in a string except vowels.,def double_except_vowels(s): return ''.join(c*2 if c.lower() not in 'aeiou' else c for c in s)
+1024,Write a Python script to print all numbers from 1 to 100 that are divisible by 7 or 11.,"def div_7_or_11(): print([x for x in range(1,101) if x%7==0 or x%11==0])"
+1025,Write a Python function to reverse a string but keep all numbers in the same positions.,"def reverse_string_static_digits(s): digits=[(i,c) for i,c in enumerate(s) if c.isdigit()]; letters=[c for c in s if not c.isdigit()][::-1]; for i,c in digits: letters.insert(i,c); return ''.join(letters)"
+1026,Write a Python script to find the shortest word in a sentence containing at least two vowels.,"def shortest_with_2vowels(s): return min((w for w in s.split() if sum(c in 'aeiou' for c in w)>=2), key=len, default='')"
+1027,Write a Python function to return the count of each digit in a number using a dictionary.,def digit_count_dict(n): from collections import Counter; return dict(Counter(str(n)))
+1028,Write a Python script to test whether a sentence contains any repeated words.,def has_repeated_words(s): w=s.lower().split(); return len(w)!=len(set(w))
+1029,Write a Python function to capitalize the second and fourth character of each word in a string.,"def cap_2nd_4th(s): return ' '.join(''.join(c.upper() if i in [1,3] else c for i,c in enumerate(w)) for w in s.split())"
+1030,Write a Python script to extract all prime digits from a number.,"def prime_digits(n): return [int(d) for d in str(n) if int(d) in [2,3,5,7]]"
+1031,Write a Python function to remove characters from a string that appear in another string.,"def remove_from_other(a,b): return ''.join(c for c in a if c not in b)"
+1032,Write a Python script to print a staircase where each step is made of a repeated character.,"def print_staircase(c, h): [print(c*(i+1)) for i in range(h)]"
+1033,Write a Python function to check if the first half of a string is the reverse of the second half.,def is_mirror_half(s): l=len(s)//2; return s[:l]==s[-1:-l-1:-1]
+1034,Write a Python script to replace the last character of each word in a string with '!'.,def bangify_last_letter(s): return ' '.join(w[:-1]+'!' if w else '' for w in s.split())
+1035,Write a Python function to return True if a string contains the word 'Python' regardless of case.,def contains_python(s): return 'python' in s.lower()
+1036,Write a Python script to return the total number of characters between the first and last vowel in a word.,"def chars_between_vowels(w): v=[i for i,c in enumerate(w) if c.lower() in 'aeiou']; return v[-1]-v[0]-1 if len(v)>=2 else 0"
+1037,Write a Python function to return the shortest string in a list containing all five vowels.,"def shortest_with_all_vowels(lst): return min((w for w in lst if all(v in w for v in 'aeiou')), key=len, default='')"
+1038,Write a Python script to alternate letters in a string between uppercase and lowercase starting from the end.,"def alt_from_end(s): return ''.join(c.upper() if i%2 else c.lower() for i,c in enumerate(reversed(s)))[::-1]"
+1039,Write a Python function to return True if a list of numbers alternates between even and odd.,"def alt_even_odd(lst): return all((x%2)!=(lst[i+1]%2) for i,x in enumerate(lst[:-1]))"
+1040,Write a Python script to capitalize every other word in a sentence starting from the end.,def cap_every_other_from_end(s): w=s.split(); return ' '.join(w[::-1][::2][::-1] + [w[::-1][1::2][::-1]]).strip()
+1041,Write a Python function to create a new string by interleaving two strings character by character.,"def interleave_strings(a,b): return ''.join(x+y for x,y in zip(a,b)) + a[len(b):] + b[len(a):]"
+1042,Write a Python script to replace every digit in a number with the number of times it appears.,def replace_digit_count(n): s=str(n); return int(''.join(str(s.count(d)) for d in s))
+1043,Write a Python function to return the first letter of each word in a sentence in reverse order.,def rev_initials(s): return ''.join(w[0] for w in s.split())[::-1]
+1044,Write a Python script to remove all vowels that are at odd indices in a string.,"def remove_odd_index_vowels(s): return ''.join(c for i,c in enumerate(s) if not (i%2 and c.lower() in 'aeiou'))"
+1045,Write a Python function to determine if the sum of ASCII values in a string is divisible by 7.,"def ascii_sum_div7(s): return sum(map(ord,s))%7==0"
+1046,Write a Python script to replace each letter in a string with the ASCII value of the next character.,def letter_to_next_ascii(s): return ''.join(str(ord(chr(ord(c)+1))) if c.isalpha() else c for c in s)
+1047,Write a Python function to count how many times a substring occurs in overlapping positions.,"def overlapping_count(s, sub): return sum(s[i:].startswith(sub) for i in range(len(s)))"
+1048,"Write a Python script to extract all alphabetic pairs from a string (e.g. 'ab', 'bc').",def alphabetic_pairs(s): return [s[i:i+2] for i in range(len(s)-1) if s[i:i+2].isalpha()]
+1049,Write a Python function to return a list of booleans where each is True if the character is a digit.,def is_digit_list(s): return [c.isdigit() for c in s]
+1050,Write a Python script to find the longest string in a list where all characters are unique.,"def longest_unique_string(lst): return max((w for w in lst if len(w)==len(set(w))), key=len, default='')"
+1051,Write a Python function to reverse all characters in a string that are not alphanumeric.,"def reverse_non_alnum(s): import re; parts=re.findall(r'\w+|\W+', s); return ''.join(p[::-1] if not p.isalnum() else p for p in parts)"
+1052,Write a Python script to shift each digit in a number forward by its value.,def shift_digits(n): return int(''.join(str((int(d)+int(d))%10) for d in str(n)))
+1053,Write a Python function to find all substrings in a string that are exactly 4 characters long.,def substr_4(s): return [s[i:i+4] for i in range(len(s)-3)]
+1054,Write a Python script to alternate between appending to the start and end of a list.,"def alt_append(lst): res=[]; for i,v in enumerate(lst): res.insert(0,v) if i%2 else res.append(v); return res"
+1055,Write a Python function to reverse every k characters in a string.,"def reverse_k(s,k): return ''.join(s[i:i+k][::-1] for i in range(0,len(s),k))"
+1056,Write a Python script to test whether a number is divisible by the count of its digits.,def div_by_digit_count(n): return n%len(str(n))==0
+1057,Write a Python function to capitalize every character in a string that follows a digit.,"def cap_after_digit(s): return ''.join(c.upper() if i>0 and s[i-1].isdigit() else c for i,c in enumerate(s))"
+1058,Write a Python script to return the average of all digit characters in a string.,def avg_digits_in_str(s): digs=[int(c) for c in s if c.isdigit()]; return sum(digs)/len(digs) if digs else 0
+1059,Write a Python function to remove all lowercase vowels and replace them with their index.,"def rmv_vowels_with_index(s): return ''.join(str(i) if c in 'aeiou' else c for i,c in enumerate(s))"
+1060,Write a Python script to print a centered triangle of stars with a given number of rows.,def triangle(n): [print(' '*(n-i-1)+'*'*(2*i+1)) for i in range(n)]
+1061,Write a Python function to return the sum of all even-positioned digits in a number.,"def sum_even_pos_digits(n): return sum(int(d) for i,d in enumerate(str(n)) if i%2==0)"
+1062,"Write a Python script to group characters in a string into letters, digits, and symbols.","def group_chars(s): l,d,y=[],[],[]; [l.append(c) if c.isalpha() else d.append(c) if c.isdigit() else y.append(c) for c in s]; return l,d,y"
+1063,Write a Python function to count how many characters in a string are surrounded by the same character.,"def same_sandwich(s): return sum(1 for i in range(1,len(s)-1) if s[i-1]==s[i+1])"
+1064,Write a Python script to extract the substring between the first and last occurrence of a character.,"def substr_between(s,c): return s[s.find(c)+1:s.rfind(c)] if s.count(c)>=2 else ''"
+1065,Write a Python function to insert a space between all letters and digits in a mixed string.,"def space_letters_digits(s): import re; return re.sub(r'(?<=[a-zA-Z])(?=\d)|(?<=\d)(?=[a-zA-Z])', ' ', s)"
+1066,Write a Python script to replace all consonants in a string with the '#' symbol.,def consonant_to_hash(s): return ''.join('#' if c.isalpha() and c.lower() not in 'aeiou' else c for c in s)
+1067,"Write a Python function to split a string into two lists: one for vowels, one for consonants.","def split_vowels_cons(s): v,c=[],[]; [v.append(c) if c in 'aeiouAEIOU' else c.append(c) for c in s if c.isalpha()]; return v,c"
+1068,Write a Python script to replace every vowel in a list of strings with its uppercase version.,def upper_vowels(lst): return [''.join(c.upper() if c in 'aeiou' else c for c in w) for w in lst]
+1069,Write a Python function to return True if a number is equal to the reverse of its digits squared.,def rev_digits_squared(n): return n==int(str(int(str(n)[::-1])**2)[::-1])
+1070,Write a Python script to alternate the order of letters in two strings of the same length.,"def alt_merge(a,b): return ''.join(x+y for x,y in zip(a,b))"
+1071,Write a Python function to replace the most frequent character in a string with '*'.,"def star_frequent(s): from collections import Counter; m=Counter(s).most_common(1)[0][0]; return s.replace(m,'*')"
+1072,Write a Python script to reverse a list of strings and capitalize only the vowels in each.,def rev_strings_vowel_caps(lst): return [''.join(c.upper() if c in 'aeiouAEIOU' else c for c in w[::-1]) for w in lst[::-1]]
+1073,Write a Python function to test if all substrings of length 2 in a string are unique.,def unique_sub_2(s): return len(set(s[i:i+2] for i in range(len(s)-1)))==len(s)-1
+1074,Write a Python script to generate a list of tuples where each tuple contains a digit and its cube.,"def digit_cube_tuples(): return [(i, i**3) for i in range(10)]"
+1075,Write a Python function to return the longest word in a sentence made of alternating letters.,"def longest_alt_word(s): return max((w for w in s.split() if all((w[i].isalpha() and (w[i].isupper()!=w[i+1].isupper())) for i in range(len(w)-1))), key=len, default='')"
+1076,Write a Python script to split a string into a list of characters without using list().,def split_no_list(s): return [*s]
+1077,Write a Python function to sort all characters in a string by their ASCII value descending.,"def sort_ascii_desc(s): return ''.join(sorted(s, key=ord, reverse=True))"
+1078,Write a Python script to count the number of characters in a string that are less than 'm'.,def char_below_m(s): return sum(1 for c in s if c<'m')
+1079,Write a Python function to extract a list of digits that are in increasing order in a number.,def increasing_digits(n): s=str(n); return [int(s[i]) for i in range(len(s)-1) if s[i]<s[i+1]]
+1080,Write a Python script to remove all characters from a string that are not in the English alphabet.,def rmv_non_alpha(s): return ''.join(c for c in s if c.isalpha())
+1081,Write a Python function to determine if the number of vowels in a word is even.,def even_vowel_count(w): return sum(1 for c in w if c in 'aeiouAEIOU')%2==0
+1082,Write a Python script to return a list of all characters that appear in exactly two words of a sentence.,"def chars_in_2_words(s): from collections import Counter; w=s.split(); allchars=''.join(set(w1)&set(w2) for i,w1 in enumerate(w) for w2 in w[i+1:]); return [c for c in set(allchars) if allchars.count(c)==2]"
+1083,Write a Python function to create a reversed version of a string where every other character is skipped.,def rev_skip_alt(s): return s[::-2]
+1084,Write a Python script to generate a list of integers where each element is the sum of the previous two.,"def fib_sum(n): a,b,res=0,1,[0,1]; [res.append(a+b) or (a,b:=(b,a+b)) for _ in range(n-2)]; return res[:n]"
+1085,Write a Python function to remove all characters from a string that match the first character.,def rmv_first_char_occ(s): return ''.join(c for c in s if c!=s[0])
+1086,Write a Python script to return a list of strings sorted by the number of uppercase characters.,"def sort_by_upper(lst): return sorted(lst, key=lambda w: sum(1 for c in w if c.isupper()))"
+1087,Write a Python function to return the index of the highest digit in a number.,def index_highest_digit(n): s=str(n); return s.index(max(s))
+1088,Write a Python script to check if the difference between two strings is exactly one character.,"def diff_one_char(a,b): return len(a)==len(b) and sum(x!=y for x,y in zip(a,b))==1"
+1089,Write a Python function to replace all consonants in a string with their position in the alphabet.,def consonant_to_pos(s): return ''.join(str(ord(c.lower())-96) if c.isalpha() and c.lower() not in 'aeiou' else c for c in s)
+1090,Write a Python script to return the product of every second digit in a number.,"def prod_2nd_digits(n): d=str(n); return eval('*'.join(d[i] for i in range(1,len(d),2)))"
+1091,Write a Python function to return all palindromes in a list that start with a vowel.,def vowel_palindromes(lst): return [w for w in lst if w==w[::-1] and w[0].lower() in 'aeiou']
+1092,Write a Python script to alternate between adding and subtracting digits in a number.,"def alt_add_sub(n): return sum(int(d) if i%2==0 else -int(d) for i,d in enumerate(str(n)))"
+1093,Write a Python function to return a new string made of every third character in a string.,def every_third_char(s): return s[2::3]
+1094,Write a Python script to replace all digits in a string with the symbol '$'.,def digits_to_dollar(s): return ''.join('$' if c.isdigit() else c for c in s)
+1095,Write a Python function to count how many characters in a string are surrounded by vowels.,"def chars_surrounded_by_vowels(s): return sum(1 for i in range(1,len(s)-1) if s[i-1].lower() in 'aeiou' and s[i+1].lower() in 'aeiou')"
+1096,Write a Python script to return all substrings of a string that start and end with a vowel.,"def vowel_subs(s): return [s[i:j+1] for i in range(len(s)) for j in range(i,len(s)) if s[i] in 'aeiou' and s[j] in 'aeiou']"
+1097,Write a Python function to return the difference in length between the shortest and longest words in a sentence.,def word_len_diff(s): w=[len(x) for x in s.split()]; return max(w)-min(w) if w else 0
+1098,Write a Python script to check if a word can be rearranged to start and end with the same character.,def rearrange_start_end_same(w): from collections import Counter; return any(w.count(c)>=2 for c in set(w))
+1099,Write a Python function to return the total number of unique consonants in a string.,def unique_consonants(s): return len(set(c.lower() for c in s if c.isalpha() and c.lower() not in 'aeiou'))
+1100,Write a Python script to reverse a list using a while loop instead of built-in functions.,"def reverse_list_while(lst): i,j=0,len(lst)-1; while i<j: lst[i],lst[j]=lst[j],lst[i]; i+=1;j-=1; return lst"

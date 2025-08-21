@@ -1,0 +1,101 @@
+id,prompt,response
+1201,Explain how to use the `type()` function to check the data type of a variable.,"Use `type(variable)` to see what data type you're working with. It's Python’s way of saying, 'Know thy variable before you mess it up.'"
+1202,Explain why using meaningful variable names is important in Python.,Meaningful variable names make your code readable and less like a cryptic prophecy. `total_price` > `tp`. Future you will thank you.
+1203,Explain the difference between `while` and `for` loops in Python.,`for` loops iterate over a sequence. `while` loops keep going until a condition breaks. One’s structured; the other’s chaos in a loop.
+1204,Explain how infinite loops happen in Python and how to avoid them.,Infinite loops happen when the exit condition never becomes False. Fix it or Python will loop like it’s Groundhog Day forever.
+1205,Explain how to use `elif` to create multiple conditions in a program.,"Use `elif` when you’ve got multiple paths. Like: `if`, `elif`, `elif`, then `else` as a safety net for indecisive logic."
+1206,Explain how the `else` clause works in both `if` statements and loops.,"In `if` statements, `else` runs if nothing above is true. In loops, `else` runs if the loop wasn't broken. It’s the 'bonus round.'"
+1207,Explain the importance of indentation consistency in Python code.,Indentation isn’t cosmetic in Python — it defines code blocks. Inconsistent indentation = Python throws a tantrum (IndentationError).
+1208,Explain how the `+=` operator works in Python.,"`+=` adds and assigns in one go: `x += 5` is shorthand for `x = x + 5`. Less typing, more progress, fewer carpal tunnel injuries."
+1209,Explain what `NoneType` means and when it might appear.,`NoneType` is the type of `None`. It appears when a function returns nothing or when you've ghosted a variable by not assigning it.
+1210,Explain how to swap values between two variables in Python.,"Use `a, b = b, a`. Python makes value swapping a one-liner. No need for a temp variable. Elegant, unlike your sleep schedule."
+1211,Explain how to create a string with multiple lines using triple quotes.,"Use triple quotes like `'''` or `\'\'\'` to span strings over multiple lines. Great for poems, long messages, or passive-aggressive notes."
+1212,Explain how to use comments to document your code in Python.,Use `#` to write comments. They’re ignored by Python but adored by future humans trying to decode your spaghetti logic.
+1213,Explain how to convert a float to an integer and vice versa.,Convert float to int: `int(3.7)` → 3. Convert int to float: `float(3)` → 3.0. Python handles conversions better than some diplomats.
+1214,Explain what the modulo operator `%` does and when to use it.,"The `%` operator returns the remainder. `7 % 3` → 1. Use it for checking divisibility, wrapping around, or acting fancy in interviews."
+1215,Explain how `bool()` behaves with different data types in Python.,`bool()` turns stuff into True or False. `bool(0)` → False. `bool('hello')` → True. It’s Python’s gut-check for truthiness.
+1216,Explain how to test if a number is divisible by another in Python.,"Use `if a % b == 0:` to check divisibility. If the remainder is 0, congrats — the number is evenly divisible (and probably smug about it)."
+1217,Explain how to use the `isinstance()` function and why it's useful.,"`isinstance(x, int)` checks type. Better than `type(x) == int` because it works with inheritance too. Like a respectful class check."
+1218,Explain what happens when you try to add a string and an integer in Python.,Python says no and raises a `TypeError`. You can’t add a string and an integer — it’s like trying to mix oil and water in code.
+1219,Explain how to use the `round()` function and what it returns.,"`round(3.14159, 2)` → 3.14. It trims decimals politely. Without the second argument, it rounds to the nearest whole number."
+1220,Explain what happens when you multiply a string by a number.,You get repetition. `'ha' * 3` → `'hahaha'`. Python obeys your chaos request and multiplies string enthusiasm.
+1221,Explain how to reverse a string using slicing.,"Use slicing: `s[::-1]` reverses a string. It’s Python's quietest magic trick — no loops, no drama."
+1222,Explain the difference between a shallow copy and a deep copy of a list.,"Shallow copy: `copy()` — copies outer list, not nested ones. Deep copy: `copy.deepcopy()` — clones everything like it’s in a sci-fi lab."
+1223,Explain why it's better to use `in` instead of `==` when checking if a value is in a list.,"`in` checks if an item exists. `==` checks equality. Use `in` when looking for membership, not identity. Don’t force commitment."
+1224,Explain how to merge two lists using the `+` operator.,"Use `list1 + list2` to merge. It creates a new list. Great for combining forces, like a superhero crossover — but with data."
+1225,Explain how to remove duplicates from a list using `set()`.,Use `list(set(my_list))` to remove duplicates. Be warned: it may scramble your order — like memory after a wild weekend.
+1226,Explain how to find the index of an item in a list using `index()`.,"Use `list.index(value)` to find where something lives. If it’s not there, Python throws a tantrum — ValueError style."
+1227,Explain what happens if you try to remove a value that isn't in a list.,You get a `ValueError`. Python doesn’t remove what doesn’t exist — it prefers you check first or be ready to catch the drama.
+1228,Explain how to insert an element at a specific position in a list.,"Use `list.insert(index, value)` to surgically place an element. Like: `colors.insert(1, 'blue')` shoves 'blue' into slot 1."
+1229,Explain how to slice a list to get every second element.,Use slicing: `list[::2]` gives every second element. Python skips with style — like hopscotch but with data.
+1230,Explain how list slicing behaves with negative indices.,Negative indices count from the end. `list[-1]` = last item. `list[-2]` = second to last. Python is cool like that.
+1231,Explain what a nested list is and how to access its elements.,A nested list is a list inside a list. Access it like `list[0][1]`. It's list-ception. Dive deep but don’t get lost.
+1232,Explain how to flatten a nested list using a loop.,Use nested loops or list comprehension. Example: `flat = [item for sublist in nested for item in sublist]`. Python flattens with flair.
+1233,Explain how to use a loop to count vowels in a string.,Loop through each character and check `if c.lower() in 'aeiou':`. Count your vowels like they owe you money.
+1234,Explain how to convert a list of strings to uppercase.,Use a loop or list comprehension: `[s.upper() for s in list_of_strings]`. Instant uppercase makeover — no caps lock needed.
+1235,Explain how to join a list of strings into one string separated by spaces.,"Use `' '.join(list_of_words)`. This merges them with spaces, like polite conversation between list items."
+1236,Explain the role of escape sequences like \\n and \\\ in strings.,Escape sequences like `\\n` (newline) and `\\t` (tab) help format text. They start with `\\` because Python needs a warning first.
+1237,Explain how to count how many times a word appears in a sentence.,Use `.count('word')` after splitting the sentence. Example: `sentence.split().count('apple')` counts apple propaganda.
+1238,Explain how to check if a string is a palindrome.,"Check if `s == s[::-1]`. If True, it’s a palindrome. If not, it’s just pretending to be symmetrical."
+1239,Explain how to check if a string contains only digits using `isdigit()`.,Use `s.isdigit()` to see if it’s all numbers. Works like a bouncer — strict but fair.
+1240,Explain how the `isalnum()` and `isalpha()` methods differ.,`isalnum()` checks for letters and numbers. `isalpha()` checks for only letters. Numbers not allowed in the alphabet club.
+1241,Explain how to remove all punctuation from a string.,"Use `re.sub(r'[^\w\s]', '', text)` from the `re` module. Or go full DIY and filter out characters manually. Your call, gladiator."
+1242,Explain how to count how many characters in a string are uppercase.,Use `sum(1 for c in s if c.isupper())`. Python counts capital letters like it's running a secret grammar check.
+1243,Explain how to test whether a string starts or ends with a specific substring.,Use `s.startswith('sub')` or `s.endswith('sub')`. Like checking if a story begins or ends with drama.
+1244,"Explain how to create an empty list, string, and dictionary in Python.","Empty list: `[]`. Empty string: `''`. Empty dictionary: `{}`. All ready to be filled with your hopes, dreams, or runtime errors."
+1245,Explain the role of the `not` keyword in logical expressions.,`not` flips a condition. `not True` → False. It’s the grammatical equivalent of a passive-aggressive no.
+1246,Explain what happens if you divide an integer by another and use `//` instead of `/`.,"Using `//` gives integer division. So `7 // 2` → 3. `7 / 2` → 3.5. One truncates, the other respects decimals. Choose wisely."
+1247,Explain how to handle unexpected input errors using `try` and `except`.,"Wrap risky code in `try: ... except:`. If Python panics, you catch the error and stop your program from combusting."
+1248,Explain how to raise a custom error in Python using `raise`.,Use `raise ValueError('your message')` to throw your own error. It's like yelling at your code with structure.
+1249,Explain how to use `finally` in a `try-except` block.,"`finally:` always runs — whether there’s an error or not. Great for cleanup, emotional closure, or sarcastic logging."
+1250,Explain the difference between `try-except` and `if` checks.,`try-except` handles actual errors. `if` checks conditions. `if` is preventive; `try-except` is reactive — like therapy vs. aspirin.
+1251,Explain how to create a dictionary using dictionary comprehension.,"Use `{k: v for k, v in iterable}` to create a dictionary from a loop or condition."
+1252,Explain how to sort a dictionary by its values.,"Use `sorted(dict.items(), key=lambda x: x[1])` to sort by values."
+1253,Explain how to get all the keys and values from a dictionary.,Use `dict.keys()` and `dict.values()` to get keys and values.
+1254,Explain how to update a dictionary with new key-value pairs.,Use `dict.update({'new_key': 'value'})` to add or update entries.
+1255,Explain how to delete a key from a dictionary safely.,"Use `dict.pop('key', None)` to delete a key without error if it doesn’t exist."
+1256,Explain how to loop through a dictionary and print each key and value.,"Use `for k, v in dict.items(): print(k, v)` to loop through a dictionary."
+1257,Explain how to nest dictionaries inside each other and access their values.,Access like `data['outer']['inner']` — each level uses another `[]`.
+1258,Explain how to check if a list is empty using a conditional.,Use `if not my_list:` — it checks if the list is empty.
+1259,Explain what `elif` allows you to do that `else` does not.,`elif` lets you chain multiple conditions. `else` is just the final fallback.
+1260,Explain why `True == 1` and `False == 0` in Python.,Because `True` is 1 and `False` is 0 under the hood. Boolean = integer in disguise.
+1261,Explain how to use the `all()` and `any()` functions with lists.,"`all()` checks if all are True, `any()` checks if at least one is True."
+1262,Explain how to reverse a list using the `reverse()` method.,Use `my_list.reverse()` — it changes the list in place.
+1263,Explain how to filter even numbers from a list using a loop.,Loop and use `if x % 2 == 0:` to collect even numbers.
+1264,Explain how to write a loop that skips certain items using `continue`.,Use `continue` to skip items: `if x == bad: continue`.
+1265,Explain how the `id()` function shows object identity in memory.,`id(obj)` returns the memory address — proves two names point to the same object.
+1266,Explain how the `del` keyword can be used to delete variables or list items.,Use `del var` to delete variables or `del list[i]` to remove items.
+1267,Explain what a `for else` structure does in Python.,`for-else` runs the `else` if the loop wasn't exited with `break`.
+1268,Explain how to generate a list of numbers from 1 to 100 using `range()`.,"Use `range(1, 101)` to get numbers from 1 to 100."
+1269,Explain how to check whether a number is a prime using a loop.,"Check divisibility from 2 to √n; if none divide, it's prime."
+1270,Explain how to use the `sorted()` function without changing the original list.,Use `sorted(my_list)` to get a sorted copy. Original list stays intact.
+1271,Explain how to find the average of numbers in a list.,Use `sum(nums) / len(nums)` — classic average formula.
+1272,Explain how to determine if all items in a list are the same.,Check `all(x == nums[0] for x in nums)` to see if all are the same.
+1273,Explain how to merge two dictionaries in Python 3.9+.,Use `merged = dict1 | dict2` in Python 3.9+.
+1274,Explain how to loop through characters in a string.,Use `for char in string:` to loop through each character.
+1275,Explain how to compare two strings alphabetically.,Compare with `<` or `>` like `if s1 < s2:` — works alphabetically.
+1276,Explain how to format a float number to show only two decimal places.,Use `f'{value:.2f}'` to format float to two decimal places.
+1277,Explain how to replace every vowel in a string with an asterisk.,Use `.replace()` with a loop or regex to swap vowels for '*'.
+1278,Explain how to create a string that repeats a specific character n times.,Use `char * n` to repeat it. Example: `'x' * 5` → `'xxxxx'`.
+1279,Explain how to check whether one list is a subset of another.,Use `all(x in big_list for x in small_list)` to check for a subset.
+1280,Explain how to find the common elements in two lists.,Use list comprehension: `[x for x in list1 if x in list2]`.
+1281,Explain how to find the longest word in a list of words.,"Use `max(words, key=len)` to find the longest word."
+1282,Explain how to check if a string is in title case.,Use `.istitle()` — returns True if each word starts with uppercase.
+1283,Explain how to test whether all characters in a string are lowercase.,Use `.islower()` — returns True if all letters are lowercase.
+1284,Explain how to check for duplicate characters in a string.,Use `len(set(s)) != len(s)` — duplicates exist if lengths differ.
+1285,Explain how to remove spaces from a string.,"Use `.replace(' ', '')` or `.split()` + `join()` to remove spaces."
+1286,Explain how to check if a string is a valid identifier in Python.,Use `.isidentifier()` — returns True if string is a valid variable name.
+1287,Explain what happens if you call a function before it is defined.,Python raises `NameError`. Functions must be defined before they’re called.
+1288,Explain how to use a function as an argument to another function.,Pass it like `func(callback)` — functions are first-class objects.
+1289,Explain how Python uses indentation to define code blocks.,"Python uses indentation to group code blocks. No braces, just whitespace."
+1290,Explain how to break a long line of code into multiple lines.,Use `\\` or parentheses to break long lines. Python appreciates the courtesy.
+1291,Explain how to escape quotes inside a string.,Escape quotes with backslashes: `'It\\'s fine'` or use double quotes around single.
+1292,Explain how to create a multi-line string using backslashes.,"Use `\\` at the end of a line to continue it. Rare, but possible."
+1293,Explain the difference between `exit()` and `quit()` in Python.,"Both exit Python, but they're meant for interactive use — not scripts."
+1294,Explain how to print multiple values in a single `print()` statement.,"Use commas: `print(a, b, c)` — prints all with spaces in one go."
+1295,Explain how to suppress the newline at the end of a `print()` statement.,"Use `print('hi', end='')` to suppress the newline."
+1296,Explain what happens when you compare two lists using `==`.,"`==` compares contents. Two lists with same items return True, even if different objects."
+1297,Explain how to find the intersection of two lists without using `set()`.,Use `[x for x in list1 if x in list2 and x not in result]` to find intersection manually.
+1298,Explain what `None` evaluates to in a Boolean context.,"`None` evaluates to `False` in Boolean context — it's a void, after all."
+1299,Explain the difference between `+=` and `=+` in Python.,`+=` adds and reassigns. `=+` just sets the variable to a positive value.
+1300,Explain how to test whether two variables point to the same object.,Use `is` to test identity: `a is b` is True only if they point to the same object.

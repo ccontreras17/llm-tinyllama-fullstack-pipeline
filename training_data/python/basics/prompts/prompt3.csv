@@ -1,0 +1,101 @@
+id,prompt
+201,Write a Python function to convert Celsius to Fahrenheit.
+202,"Write a Python script to check if a number is positive, negative, or zero."
+203,Write a Python function to compute the cube of a number.
+204,Write a Python program to count the number of digits in an integer.
+205,Write a Python function to determine if a character is a vowel or consonant.
+206,Write a Python script to print the ASCII value of a character.
+207,Write a Python function to swap two numbers using a temporary variable.
+208,Write a Python script to swap two numbers without using a temporary variable.
+209,Write a Python function to calculate the circumference of a circle.
+210,Write a Python program to determine if a character is uppercase or lowercase.
+211,Write a Python function to find the sum of natural numbers below a given number.
+212,Write a Python script to generate multiplication tables from 1 to 5.
+213,Write a Python function to print the first 10 natural numbers using a while loop.
+214,Write a Python program to display numbers from 1 to 100 except multiples of 3.
+215,Write a Python script to reverse a number.
+216,Write a Python function to convert a number to a list of its digits.
+217,Write a Python program to calculate simple interest.
+218,Write a Python script to print all ASCII characters with their values.
+219,Write a Python function to determine if a character is a digit.
+220,Write a Python script to print a pyramid pattern of stars.
+221,Write a Python function to print all even numbers from 1 to 50.
+222,Write a Python script to count down from 10 to 1.
+223,Write a Python function to check if the length of a string is even or odd.
+224,Write a Python program to generate a random integer between 1 and 100.
+225,Write a Python function to round a number up to the nearest integer.
+226,Write a Python script to print the current working directory.
+227,Write a Python function to remove the last character from a string.
+228,Write a Python program to print the first and last element of a list.
+229,Write a Python function to check if a number is within a given range.
+230,Write a Python script to convert a list of floats to integers.
+231,Write a Python function to find the smallest number in a list.
+232,Write a Python script to convert minutes into hours and minutes.
+233,Write a Python function to print a square of '#' characters.
+234,Write a Python program to find the ASCII value of each character in a string.
+235,Write a Python function to reverse a list in place.
+236,Write a Python script to print the first 20 odd numbers.
+237,Write a Python function to check if a number is divisible by both 3 and 5.
+238,Write a Python program to create a list of the first 10 multiples of 7.
+239,Write a Python script to split a list into two halves.
+240,Write a Python function to remove a specific character from a string.
+241,Write a Python script to print a triangle pattern with numbers.
+242,Write a Python function to return the last n elements of a list.
+243,Write a Python program to compare two strings case-insensitively.
+244,Write a Python script to print even indexed characters in a string.
+245,Write a Python function to concatenate two lists index-wise.
+246,Write a Python script to double each character in a string.
+247,Write a Python function to remove duplicate characters in a string.
+248,Write a Python script to filter strings longer than 5 characters in a list.
+249,Write a Python program to calculate the number of lowercase letters in a string.
+250,Write a Python function to check if a string is a valid Python identifier.
+251,Write a Python script to repeat a string n times.
+252,Write a Python function to extract all uppercase characters from a string.
+253,Write a Python script to find all numbers between 1 and 1000 that are divisible by 7.
+254,Write a Python function to return the number of times a specific element appears in a list.
+255,Write a Python script to replace the first occurrence of a word in a string.
+256,Write a Python function to remove the nth element from a list.
+257,Write a Python script to pad a string with zeros to the left.
+258,Write a Python function to insert an element at the beginning of a list.
+259,Write a Python script to convert a tuple to a string.
+260,Write a Python function to check if a list is empty.
+261,"Write a Python script to check if two strings are equal, ignoring case."
+262,Write a Python function to slice a string from index 2 to 5.
+263,Write a Python script to create a list of characters from a string.
+264,Write a Python function to calculate the sum of ASCII values in a string.
+265,Write a Python script to check if a list contains any None values.
+266,Write a Python function to replace the nth character of a string.
+267,Write a Python script to convert all strings in a list to lowercase.
+268,Write a Python function to create a list of the lengths of words in a sentence.
+269,Write a Python script to remove newline characters from a string.
+270,Write a Python function to convert a list to a tuple.
+271,Write a Python script to check if a character is in a given string.
+272,Write a Python function to check if a number is divisible by another number.
+273,Write a Python script to repeat each element in a list n times.
+274,Write a Python function to get the middle element of a list.
+275,Write a Python script to count the number of true values in a boolean list.
+276,Write a Python function to calculate the product of all elements in a list.
+277,Write a Python script to print all three-letter combinations from a list of characters.
+278,Write a Python function to count characters in a string using a dictionary.
+279,Write a Python script to print a diamond pattern using stars.
+280,Write a Python function to find the difference between max and min in a list.
+281,Write a Python script to print all elements of a list with their indices.
+282,Write a Python function to remove the first n characters of a string.
+283,Write a Python script to create a dictionary from a list of keys with default values.
+284,Write a Python function to generate a list of repeated elements.
+285,Write a Python script to remove all negative numbers from a list.
+286,Write a Python function to insert a substring into a string at a given index.
+287,Write a Python script to check if a word is present in a sentence.
+288,"Write a Python function to count digits, letters, and symbols in a string."
+289,Write a Python script to print numbers from 1 to 10 using recursion.
+290,Write a Python function to convert a string to lowercase without using lower().
+291,Write a Python script to add two numbers entered by the user.
+292,Write a Python function to generate a list of odd numbers from 1 to n.
+293,Write a Python script to print a pattern of numbers in right angle triangle shape.
+294,Write a Python function to mask all but the last 4 characters of a string.
+295,Write a Python script to find the maximum element in a 2D list.
+296,"Write a Python function to convert hours, minutes, seconds into total seconds."
+297,Write a Python script to count words in a multiline string.
+298,Write a Python function to check if all characters in a string are lowercase.
+299,Write a Python script to create a list of integers from a space-separated string.
+300,Write a Python function to repeat a list n times.
